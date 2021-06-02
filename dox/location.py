@@ -1,20 +1,32 @@
 from __future__ import annotations
 from dataclasses import dataclass
 from enum import Enum
-from typing import Sequence
+from typing import Optional, Sequence
 
 
 class Kind(Enum):
     New = "New"
     Top = "Top"
     Class = "Class"
+    File = "File"
+    Constructor = "Constructor"
+    Function = "Function"
+    Method = "Method"
 
 
-@dataclass(frozen=True)
-class _Location:
+class _Set_:
+    name: Optional[str]
+
+    def set_name(self, val: str):
+        assert self.name is None
+        self.name = val
+
+
+@dataclass
+class _Location(_Set_):
     parent: Location
     kind: Kind
-    name: str
+    name: Optional[str]
     signature: str
     is_func_declaration: bool
 
@@ -22,6 +34,18 @@ class _Location:
 class _Hashable_(_Location):
     def __hash__(self):
         pass
+
+
+class _Get_(_Location):
+    def is_file(self) -> bool:
+        return self.kind == Kind.File
+
+    def is_function(self) -> bool:
+        return self.kind in [
+            Kind.Constructor,
+            Kind.Function,
+            Kind.Method,
+        ]
 
 
 Html = str
