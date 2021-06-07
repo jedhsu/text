@@ -1,8 +1,8 @@
 from __future__ import annotations
 from dataclasses import dataclass
+from io import StringIO
 import re
 from typing import Optional, Pattern
-
 
 @dataclass(frozen=True)
 class _Patterns:
@@ -12,9 +12,19 @@ class _Patterns:
     small_caps: Pattern = re.compile(r'<span\s+class="small-caps">([A-Z]+)</span>')
 
 
-# @dataclass
-# class _Xml:
-#     _patterns: _Patterns
+@dataclass
+class _Xml:
+    _patterns: _Patterns
+    buffer: StringIO
+
+    paragraphs: list[_Paragraph]
+    
+    _pending_paragraph: bool
+
+    inlines: list[_Inline]
+
+    context: _Context = _Context("main")
+    
 
 # class _Apply_:
 #     def change_span_locators_to_visible_markers(self):
@@ -26,23 +36,66 @@ class _Patterns:
 #     def covnert_image_tags_to_paths(self):
 #         pass
 
-# class _Visit_:
-#     def visit(node: Text):
-#         pass
+class _Visit_(_Xml):
+    def visit(node: Text):
+        pass
 
-#     def has_visited_previous_element(el: Element) -> bool:
-#         pass
+    def has_visited_previous_element(el: Element) -> bool:
+        pass
+    
+    def visit_prev(self, elt: Element):
+        pass
+    def visit_next(self, elt: Element):
+        pass
 
-#     def visit_next_element(elt: Element):
-#         pass
+class _Render_:
+    @staticmethod
+    def render(nodes: list[Node]) -> str:
+        for node in nodes:
+            node.accept(self)
 
-# class _Render_:
-#     def render(Sequence[Node]) -> str:
-#         pass
+        buffer = StringIO()
+        buffer.write("<chapter>")
+
+
 
 
 class Xml:
-    pass
+    BitwiseOps = {
+        "&eacute;": "&#233;",
+        "&ensp;": "&#8194;",
+        "&ldquo;": "&#8220;",
+        "&nbsp;": "&#160;",
+        "&rdquo;": "&#8221;",
+        "&rsquo;": "&#8217;",
+        "&rarr;": "&#8594;",
+        "&sect;": "&#167;",
+        "&thinsp;": "&#8201;",
+        "&times;": "&#215;",
+        "<br>": "<br/>",
+    }
+    
+    TableSubs = {
+        "<table>": "[table]",
+        "</table>": "[/table]",
+        "<thead>": "[thead]",
+        "</thead>": "[/thead]",
+        "<tbody>": "[tbody]",
+        "</tbody>": "[/tbody]",
+        "<tr>": "[tr]",
+        "</tr>": "[/tr]",
+        "<td>": "[td]",
+        "</td>": "[/td]",
+    }
+
+    def custom_bitwise_ops(self):
+        # text = text.replaceAllMapped(
+        #     _smallCapsPattern, (match) => "<bitwise>${match[1]}</bitwise>");
+
+        # text = text
+
+    def table_substitutions():
+        pass
 
 
 @dataclass

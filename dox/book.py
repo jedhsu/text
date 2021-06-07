@@ -3,6 +3,7 @@ from typing import MutableSequence
 
 from .page import Page
 
+
 @dataclass
 class _Page:
     sections: dict[str, list[Page]]
@@ -31,3 +32,4 @@ class _Split_(_Page):
 
 
 class Book(_GetPage_):
+    pass

@@ -1,4 +1,6 @@
 from dataclasses import dataclass
+from pathlib import Path
+
 class _Patterns:
     # [TODO] finsh
     block = r"^/\* ([A-Z][A-Za-z\s]+) ([-a-z0-9]+) < ([A-Z][A-Za-z\s]+) ([-a-z0-9]+)$"
@@ -47,4 +49,25 @@ class Parser:
 
     def parse(self):
         for line in self.lines():
-            
+
+
+
+@dataclass
+class SourceLine:
+    text: str
+    location: Location
+    start: CodeTag
+    end: CodeTag
+
+    def is_present(self, tag: CodeTag) -> bool:
+        pass
+
+    def into_string(self) -> str:
+        pass
+
+@dataclass
+class SourceFile:
+    path: Path
+    lines: list[SourceLine]
+    
+
