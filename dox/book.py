@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import MutableSequence
+from typing import MutableSequence, Optional
 
 from .page import Page
 
@@ -10,9 +10,10 @@ class _Page:
 
 
 class _GetPage_(_Page):
-    @staticmethod
-    def get_chapter(title: str) -> Page:
-        pass
+    def get_chapter(self, title: str) -> Optional[Page]:
+        for page in self.sections.values():
+            if page.title == title:
+                return page
 
     @staticmethod
     def get_number(title: str) -> Page:

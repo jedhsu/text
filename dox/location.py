@@ -1,6 +1,5 @@
 from __future__ import annotations
 from dataclasses import dataclass
-from enum import Enum
 from typing import Optional, Sequence
 
 
@@ -80,33 +79,44 @@ class _Convert_(_Get_, _Location):
     ) -> Optional[Html]:
         if self.kind == Kind.New:
             return "create new file"
+
         elif self.kind == Kind.Top:
             return "add to top of file"
+
         elif self.kind == Kind.Class and self.parent.kind == Kind.Class:
             return f"nest inside class <em>{preceding.name}</em>{preceding.signature})"
+
         elif self.is_function() and self == preceding:
             if self.name == "resolve" and self.signature == "Expr expr":
                 return f"add after <em>{preceding.name}</em>({preceding.signature})"
             else:
                 return f"in <em>{self.name}</em>()"
+
         elif self.is_function() and removed:
             return f"{self.kind} <em>{self.name}</em>"
+
         elif self.parent == preceding and not preceding.is_file():
             return f"in {preceding.kind} <em>${preceding.name}</em>"
+
         elif self.parent == self and not self.is_file():
             return f"in {self.kind} <em>{self.name}</em>"
+
         elif preceding.is_function():
             return f"add after <em>{preceding.name}</em>()"
+
         elif preceding.is_file():
             return f"add after {preceding.kind} <em>{preceding.name}</em>"
+
         else:
             return None
 
     def into_xml(self) -> str:
         if self.kind == "New":
             return "create new file"
+
         elif self.kind == "Top":
             return "add to top of file"
+
         elif self.kind == "Class" and self.parent.kind == "Class":
             return (
                 f"nest inside class <location-type>{self.parent.name}</location-type>"

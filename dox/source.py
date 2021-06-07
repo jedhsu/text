@@ -1,6 +1,11 @@
 from dataclasses import dataclass
 from pathlib import Path
+import re
+from typing import Optional, Sequence
 
+from .book import Book
+from .codetag import CodeTag
+from .location import Location
 class _Patterns:
     # [TODO] finsh
     block = r"^/\* ([A-Z][A-Za-z\s]+) ([-a-z0-9]+) < ([A-Z][A-Za-z\s]+) ([-a-z0-9]+)$"
@@ -27,7 +32,7 @@ class UpdateLocation:
     def update_location_before(self, line: str, index: int):
         match = re.match(Pattern.function, line)[0]
         if match and "#define" in line and match[0] in self.keywords:
-            if "//" not in line and " not in line:
+            if "//" not in line and '"' not in line:
                 is_function_declaration = line[-1] == ";"
                 
                 pass
@@ -56,14 +61,14 @@ class Parser:
 class SourceLine:
     text: str
     location: Location
-    start: CodeTag
-    end: CodeTag
+    start: Optional[CodeTag]
+    end: Optional[CodeTag]
 
     def is_present(self, tag: CodeTag) -> bool:
         pass
 
     def into_string(self) -> str:
-        pass
+        if self.end 
 
 @dataclass
 class SourceFile:

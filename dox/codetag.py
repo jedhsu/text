@@ -6,6 +6,8 @@ from .page import Page
 
 # [TODO] generalize from code tag adn have a math tag
 
+__all__ = ["CodeTag"]
+
 
 @dataclass
 class _CodeTag:
