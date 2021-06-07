@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Optional, Sequence
 
 from .codetag import CodeTag
+from .html import Html
 from .location import Location
 
 
@@ -32,17 +33,29 @@ class _Snippet:
     context_after: list[str]
 
 
-class _Get_(_Snippet):
-    pass
-
-
 class _Update_(_Snippet):
     def add_line(
         self,
         index: int,
         line: SourceLine,
     ):
-        pass
+        if not self:
+            self._location = line.location
+            self._starting_line = index
+        self.added.append(line.text)
+
+    def remove_line(
+        self,
+        index: int,
+        line: SourceLine,
+    ):
+        self.removed.add(line.text)
+        self._ending_line = index
+
+
+class _Get_(_Snippet):
+    def get_location_html_lines(self) -> Sequence[str]:
+        result = [Html(self.source_path).wrap("em")]
 
 
 class _Get_(_Snippet):

@@ -2,22 +2,26 @@ from __future__ import annotations
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-from typing import Sequence
+from typing import Optional, Sequence
 
 __all__ = ["Page"]
 
 
-class Template(Enum):
+class Template:
     Title = "Title"
     Toc = "Toc"
     Page = "Page"
 
-@dataclass(frozen=True)
+
+@dataclass
 class _Page:
     title: str
-    part: str
+    numstr: str
+
     ordinal: int
     chapters: Sequence[Page]
+
+    part: Optional[Page]
 
 
 class _Parse_(_Page):
@@ -28,14 +32,27 @@ class _Parse_(_Page):
         pass
 
 
+class _Path_(_Page):
+    def markdown_path(self) -> Path:
+        return Path("book", f"{self.title}.md")
+
+    def html_path(self) -> Path:
+        return Path("site", f"{self.title}.html")
+
 class _Get_(_Page):
-    def get_markdown_path(self) -> Path:
-        raise NotImplemented
+    def is_chapter(self) -> bool:
+        return self.part is None
+    
+    def is_part(self) -> bool:
+        return self.part is not None
+    
+    def language(self) -> str:
+        pass
+    
+    def abbrev(self) -> str:
+        pass
 
-    def get_html_path(self) -> Path:
-        raise NotImplemented
-
-    def get_code_tags(self) -> CodeTag:
+    def code_tags(self) -> CodeTag:
         raise NotImplemented
 
 

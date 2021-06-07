@@ -4,11 +4,11 @@ from typing import Optional
 
 
 @dataclass
-class _Highlight:
+class _Highlights:
     is_xml: bool
     _buffer: str  # [TODO] what is this
     lexer: type
-    # language: Language
+    language: Language
 
     in_macro: bool = False
 
@@ -20,17 +20,13 @@ class _Compute_:
 
 
 class _Write_:
-    # [TODO] not sure if this necces
-    # Chars = {
-    #     "lessthan": "&lt;"
-    #         }
-    def write_char(self, char: int):
+    def write_char(char: int):
         pass
 
-    def write_text(self, text: str):
+    def write_text(text: str):
         pass
 
-    def write_token(self, type: TokenType, text=Optional[str]):
+    def write_token(type: TokenType, text=Optional[str]):
         pass
 
 
@@ -38,5 +34,5 @@ class _Format_:
     pass
 
 
-class Highlight:
+class Highlights:
     pass

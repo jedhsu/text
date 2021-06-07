@@ -1,6 +1,7 @@
+from __future__ import annotations
 from dataclasses import dataclass
 import re
-from typing import Pattern
+from typing import Optional, Pattern
 
 
 @dataclass(frozen=True)
@@ -11,7 +12,7 @@ class _Patterns:
     small_caps: Pattern = re.compile(r'<span\s+class="small-caps">([A-Z]+)</span>')
 
 
-# @dataclass(frozen=True)
+# @dataclass
 # class _Xml:
 #     _patterns: _Patterns
 
@@ -19,7 +20,7 @@ class _Patterns:
 #     def change_span_locators_to_visible_markers(self):
 #         pass
 
-#     def discard_design_note_divs:
+#     def discard_design_note_divs(self):
 #         pass
 
 #     def covnert_image_tags_to_paths(self):
@@ -40,5 +41,45 @@ class _Patterns:
 #         pass
 
 
-# class Xml:
-#     pas
+class Xml:
+    pass
+
+
+@dataclass
+class _Context:
+    name: str
+    parent: Optional[_Context]
+
+    def __contains__(self, name: str) -> bool:
+        # [TODO] this ugly-ish but practical procedural stuff would be good candidate for macro
+        node = self
+        while node:
+            if node.name == name:
+                return True
+            node = node.parent
+        return False
+
+    def __in__(self, name: str) -> bool:
+        return self.parent and name in self.parent
+
+    def depth(self):
+        depth = 0
+
+        # [TODO] finish...
+
+
+@dataclass
+class _Paragraph:
+    pass
+
+
+@dataclass
+class _Inline:
+    tag: str
+    text: str
+
+    def is_text(self):
+        pass
+
+    def pprint(self):
+        pass

@@ -1,5 +1,7 @@
 from typing import Pattern
 
+import markdown
+
 
 class _BlockSyntax:
     _header_pattern: Pattern
