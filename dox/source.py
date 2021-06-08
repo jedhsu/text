@@ -25,9 +25,9 @@ class _Patterns:
 
     type = r"(public )?(abstract )?(class|enum|interface) ([A-Z]\w+)"
 
-#     namedtypedef
-#     unnamedtypedef
-#     typedefname
+    namedtypedef = r"^typedef (enum|struct|union) (w+) \{"
+    unnamedtypedef = r"^typedef (enum|struct|union) \{"
+    typedefname = r"^\} (\w+)"
 
 class UpdateLocation:
     def update_location_before(self, line: str, index: int):
@@ -42,10 +42,16 @@ class UpdateLocation:
             
     
 
+
+@dataclass
+class SourceFile:
+    path: Path
+    lines: list[SourceLine]
+    
 @dataclass
 class Parser:
     book: Book
-    source: Source
+    source: SourceFile
     lines: Sequence[str]
     states: Sequence[ParseState]
 
@@ -70,10 +76,4 @@ class SourceLine:
 
     def into_string(self) -> str:
         if self.end 
-
-@dataclass
-class SourceFile:
-    path: Path
-    lines: list[SourceLine]
-    
 

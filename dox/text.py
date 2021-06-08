@@ -61,7 +61,7 @@ class _Compute_(_Text):
         return self[: len(self) - 1] if self.endswith("\n") else self
 
 
-class Int(int):
+class Integer(int):
     def __new__(cls, val: int):
         return super().__new__(int, val)
 

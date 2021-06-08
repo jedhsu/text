@@ -1,6 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass
-from typing import Optional, Sequence
+from typing import Optional, Optional, Sequence
 
 
 class Kind:
@@ -110,7 +110,7 @@ class _Convert_(_Get_, _Location):
         else:
             return None
 
-    def into_xml(self) -> str:
+    def into_xml(self) -> Optional[str]:
         if self.kind == "New":
             return "create new file"
 

@@ -22,8 +22,9 @@ class _CodeTag:
     show_location: bool
 
 
-class _Order_:
-    pass
+class _Compare_:
+    def le(self):  # [TODO] wat is return
+        pass
 
 
 class _Create_:
