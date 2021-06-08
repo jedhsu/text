@@ -6,6 +6,7 @@ from typing import Optional, Sequence
 from .book import Book
 from .codetag import CodeTag
 from .location import Location
+
 class _Patterns:
     # [TODO] finsh
     block = r"^/\* ([A-Z][A-Za-z\s]+) ([-a-z0-9]+) < ([A-Z][A-Za-z\s]+) ([-a-z0-9]+)$"

@@ -3,6 +3,8 @@ from typing import MutableSequence, Optional
 
 from .page import Page
 
+__all__ = ["Book"]
+
 
 @dataclass
 class _Page:

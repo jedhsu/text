@@ -46,8 +46,13 @@ class _Get_(_Page):
     def is_part(self) -> bool:
         return self.part is not None
     
-    def language(self) -> str:
-        pass
+    def language(self) -> Optional[str]:
+        if self.is_part():
+            return None
+
+        if self.part.title == "FILLME":
+            pass
+
     
     def abbrev(self) -> str:
         pass

@@ -123,16 +123,49 @@ class _Context:
 
 @dataclass
 class _Paragraph:
-    pass
+    context: _Context
+    contents: list[_Inline]
+    
+    next_tags= {
+      "aside",
+      "challenges-p",
+      "challenges-list-p",
+      "design-p",
+      "design-list-p",
+      "list-p",
+      "p"
+    };
+
+    def _is_next(self, tag: str, previous_tag: str) -> bool:
+        if tag == previous_tag:
+            return tag in self.next_tags
+        
+        if tag.endswith("list-p"):
+            return "ordered-" in previous_tag
+
+        # if tag != "xml":
+        #     buffer.write(f"<{tag}>")
+
 
 
 @dataclass
 class _Inline:
-    tag: str
+    tag: Optional[str]
     text: str
-
+    
+    @classmethod
+    def create(cls, tag: str, text: str = ""):
+        return cls(tag, text)
+    
     def is_text(self):
-        pass
+        return self.tag is not None
+
+    def __repr__(self, buffer: StringIO, context: _Context):
+        if not self.tag:
+            buffer.write(self.text)
+            return 
+
+        # [TODO] finish
 
     def pprint(self):
         pass

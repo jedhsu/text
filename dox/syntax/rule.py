@@ -30,7 +30,10 @@ class SimpleRule(Rule):
 
 @dataclass
 class CaptureRule(Rule):
-    pass
+    token_types: list[str]
+
+    def apply(self, highlight: Highlight):
+        pass
 
 
 @dataclass
