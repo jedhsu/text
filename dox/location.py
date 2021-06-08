@@ -55,6 +55,16 @@ class _Get_(_Location):
         #     current = current.parent
         # return result
 
+    def pop_to_depth(self, depth: int) -> Location:
+        """
+        Discard as many children as needed. to reach depth.
+
+        """
+        locs = []
+
+
+#         while self.current:
+#             locs.add(self.current)
 
 Html = str
 

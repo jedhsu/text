@@ -56,3 +56,7 @@ class _Update_(_Snippet):
 class _Get_(_Snippet):
     def get_location_html_lines(self) -> Sequence[str]:
         result = [Html(self.source_path).wrap("em")]
+
+
+class _Build_(_Snippet):
+    pass

@@ -2,6 +2,7 @@ from collections import deque
 from dataclasses import dataclass
 from io import StringIO
 from typing import Sequence
+
 class BlockTags:
     blockquote = "blockquote"
     div = "div"
