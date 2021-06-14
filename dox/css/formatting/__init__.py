@@ -1,0 +1,5 @@
+"""
+
+Visual formatting model.
+
+"""
