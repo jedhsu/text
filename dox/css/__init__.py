@@ -19,60 +19,8 @@ aspect_ratio: property
 attr_: Callable
 
 
-@dataclass
-class Backdrop:
-    backdrop: PseudoElement
-    backdrop_filter: property  # Applies graphical effects *behind* element
-    backface_visibility: property  # Sets whether back face of element is visible
-
-    Global = [
-        "inherit",
-        "initial",
-        "unset",
-    ]
-
-
 # ::before (:before)
 # ::after (:after)
-
-
-@dataclass
-class Mode:
-    blend_mode: property
-
-
-class BlendMode:
-    """
-    Sets how element content should blend with element parent & background.
-
-    """
-
-    Normal = "normal"
-    Multiply = "multiply"
-    Screen = "screen"
-    Overlay = "overlay"
-
-    Darken = "darken"
-    Lighten = "lighten"
-
-    ColorDodge = "color-dodge"
-    ColorBurn = "color-burn"
-
-    HardLight = "hard-light"
-    SoftLight = "soft-light"
-
-    Difference = "difference"
-    Exclusion = "exclusion"
-
-    # hsva
-    Hue = "hue"
-    Saturation = "saturation"
-    Color = "color"
-    Luminosity = "luminosity"
-
-
-class MixBlendMode(BlendMode):
-    pass
 
 
 class WritingMode:
@@ -99,7 +47,6 @@ class Block:
 @dataclass
 class Box:
     decoration_break: type
-    shadow: type
     sizing: type
 
 
@@ -124,16 +71,10 @@ class CaretColor(Color, Property):
     pass
 
 
-clamp_: Callable  # relaed to min an max oper
-
-
 @dataclass
 class Color:
     adjust: type
     scheme: type
-
-
-direction: property
 
 
 @dataclass
@@ -160,13 +101,6 @@ class Host:
 @dataclass
 class Import(AtRule):
     pass
-
-
-@dataclass
-class Initial:
-    initial: property
-    letter: property
-    letter_align: property
 
 
 @dataclass
@@ -234,13 +168,6 @@ class Inline:
     end: int
 
 
-@dataclass
-class Paint:
-    paint_: Callable
-
-    paint_order: property
-
-
 part: PseudoElement
 
 
@@ -299,11 +226,6 @@ class Target:
 
     text: PseudoElement
     text_: Callable
-
-
-@dataclass
-class Unicode:
-    bidi: property
 
 
 @dataclass

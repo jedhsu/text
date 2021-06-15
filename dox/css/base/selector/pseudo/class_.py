@@ -1,0 +1,2 @@
+class UiStatePseudoClass:
+    pass

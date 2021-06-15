@@ -9,6 +9,16 @@ from dataclasses import dataclass
 from ...base import Property, ShorthandProperty
 
 
+class GridDisplay:
+    """
+    Display options for Flex.
+
+    """
+
+    Flex = "flex"
+    InlineFlex = "inline-flex"
+
+
 class FlexDirection(Property):
     # x-direction
     Row = "row"
@@ -32,18 +42,41 @@ class FlexItem:
     pass
 
 
+class FlexAxis:
+    pass
+
+
+class MainAxis(FlexAxis):
+    pass
+
+
+class CrossAxis(FlexAxis):
+    pass
+
+
 @dataclass
 class FlexibleBoxLayout(Module):
     flex: ShorthandProperty
 
-    flex_basis: Property
-
-    flex_grow: Property
-
     flex_direction: FlexDirection
-    flex_shrink: Property
+
+    flex_basis: FlexBasis
+    flex_grow: FlexGrow
+    flex_shrink: FlexShrink
 
     order: Property
+
+
+class FlexBasis(Length):
+    pass
+
+
+class FlexGrow(Length):
+    pass
+
+
+class FlexShrink(Length):
+    pass
 
 
 class FlexWrap(Property):

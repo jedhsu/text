@@ -1,8 +1,17 @@
+# [TODO] feature query
+
+from typing import Generic, Literal, TypeVar
+
+
 class GridContainer:
     pass
 
 
-class GridLine:
+# [TODO] need these types
+T = TypeVar("T", Literal["Auto"], CustomIdent, int, CustomIdentInt, Span)
+
+
+class GridLine(Generic[T]):
     """
     Boundary lines.
 
@@ -15,7 +24,21 @@ class GridTrack:
     pass
 
 
-class GridItem:
+class GridCell:
+    """
+    A single space on the grid.
+
+    """
+
+    pass
+
+
+class GridArea:
+    """
+    A rectangular area on the grid made up of one or more grid cells.
+
+    """
+
     pass
 
 

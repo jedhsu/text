@@ -1,0 +1,2 @@
+class Specificity:
+    pass

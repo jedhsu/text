@@ -1,3 +1,6 @@
+from dataclasses import dataclass
+
+
 @dataclass
 class Animation(Property):
 
@@ -13,3 +16,38 @@ class Animation(Property):
 
     fill_mode: Property
     play_state: Property
+
+
+"""
+
+[SVG]
+
+"""
+
+
+class SvgAnimate:
+    pass
+
+
+class SvgAnimateColor:
+    pass
+
+
+class SvgAnimateMotion:
+    pass
+
+
+class SvgAnimateTransform:
+    pass
+
+
+class SvgDiscard:
+    pass
+
+
+class SvgMpath:
+    pass
+
+
+class SvgSet:
+    pass

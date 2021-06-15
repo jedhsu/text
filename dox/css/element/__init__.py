@@ -42,5 +42,7 @@ class Clip:
 
     """
 
+    # [TODO] move to animation?
+
     clip: property
     clip_path: property

@@ -6,10 +6,14 @@ class PositioningDimensions(Dimensions):
 
 
 class Position(Property):
-    Fixed = "fixed"
     Static = "static"
+
+    Fixed = "fixed"
     Absolute = "absolute"
     Relative = "relative"
+
+    def positioned(self) -> bool:
+        return True if self == self.Static else False
 
 
 class PositionedLayout(Module):

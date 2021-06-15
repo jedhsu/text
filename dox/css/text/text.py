@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 from ..measure import Length
 
-__all_ = ["Text"]
+__all__ = ["Text"]
 
 
 class TextTransform:
@@ -35,10 +35,18 @@ class DecorationStyle:
     Wavy = "wavy"
 
 
+class TextRendering:
+    Auto = "auto"
+
+    OptimizeSpeed = "optimizeSpeed"
+    OptimizeLegibility = "optimizeLegibility"
+    GeometricPrecision = "geometricPrecision"
+
+
 @dataclass
 class _Transform_:
     overflow: property
-    rendering: property
+    rendering: TextRendering
     shadow: property
     size_adjust: property
     transform: property
@@ -59,14 +67,24 @@ class _Decorate_:
     decoration_thickness: type
 
 
+class TextOrientation:
+    Mixed = "mixed"
+    Upright = "upright"
+    Sideways = "sideways"
+
+
+class Direction:
+    LeftToRight = "ltr"
+    RightToLeft = "rtl"
+
+
 @dataclass
 class _Align_:
     align: type
     combine_upright: type
 
     justify: type
-    orientation: type
-
+    orientation: TextOrientation
     indent: Length
 
 

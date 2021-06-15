@@ -38,23 +38,34 @@ Keywords are grouped into six value categories.
 
 
 class DisplayOutside(Keyword):
-    pass
+    Block = "block"
+    Inline = "inline"
+    RunIn = "run-in"
 
 
 class DisplayInside(Keyword):
-    pass
+    Flow = "flow"
+    FlowRoot = "flow-root"
+
+    # [TODO] finish
 
 
 class DisplayListItem(Keyword):
-    pass
+    ListItem = "list-item"
+    # figure this out
 
 
 class DisplayLegacy(Keyword):
-    pass
+    InlineBlock = "inline-block"
+    InlineListItem = "inline-list-item"
+    InlineTable = "inline-table"
+    InlineFlex = "inline-flex"
+    InlineGrid = "inline-grid"
 
 
 class DisplayBox(Keyword):
-    pass
+    Contents = "contents"
+    None_ = "none"
 
 
 class DisplayInternal(Keyword):

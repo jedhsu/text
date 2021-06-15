@@ -1,6 +1,34 @@
 from dataclasses import dataclass
 
 
+class MaskMode:
+    Alpha = "alpha"
+    Luminance = "luminance"
+    MatchSource = "match-source"
+
+    # [TODO] finish
+
+
+class MaskComposite:
+    Add = "add"
+    Subtract = "subtract"
+    Intersect = "intersect"
+    Exclude = "exclude"
+
+
+class MaskOrigin:
+    ContentBox = "content-box"
+    PaddingBox = "padding-box"
+    BorderBox = "border-box"
+    MarginBox = "margin-box"
+
+    FillBox = "fill-box"
+    StrokeBox = "stroke-box"
+    ViewBox = "view-box"
+
+    # [TODO] finish
+
+
 @dataclass
 class MaskBorder:
     border: type
@@ -14,12 +42,12 @@ class MaskBorder:
 
 @dataclass
 class Mask:
-    mode: type
+    mode: MaskMode
+    composite: MaskComposite
 
     mask: type
     border: MaskBorder
     clip: type
-    composite: type
     image: type
     origin: type
     position: type

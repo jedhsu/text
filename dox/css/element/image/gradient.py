@@ -10,5 +10,10 @@ class Gradient(Image):
     linear_gradient_: Callable
     radial_gradient_: Callable
 
-    repeating_linear_gradient_: Callable
-    repeating_radial_gradient_: Callable
+    # repeating_linear_gradient_: Callable
+    # repeating_radial_gradient_: Callable
+
+
+class RepeatingGradient(Gradient):
+    linear: Callable
+    radial: Callable

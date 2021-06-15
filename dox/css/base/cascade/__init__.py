@@ -13,16 +13,8 @@ class Importance:
     pass
 
 
-class Inheritance:
-    class Unset(Keyword):
-        pass
-
-    class Inherit(Keyword):
-        pass
-
-    class Revert(Keyword):
-        pass
-
-
 class Order:
     pass
+
+
+# [TODO] all is a standin for all properties except...

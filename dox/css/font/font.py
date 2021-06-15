@@ -23,6 +23,20 @@ class FontFace(AtRule):
         pass
 
 
+class FontStretch:
+    Normal = "normal"
+
+    UltraCondensed = "ultra-condensed"
+    ExtraCondensed = "extra-condensed"
+    Condensed = "condensed"
+    SemiCondensed = "semi-condensed"
+
+    SemiExpanded = "semi-expanded"
+    Expanded = "expanded"
+    ExtraExpanded = "extra-expanded"
+    UltraExpanded = "ultra-expanded"
+
+
 @dataclass
 class Font:
     font: property
@@ -44,6 +58,16 @@ class Font:
 
     font_variation_settings: property
     font_weight: property
+
+
+@dataclass
+class Unicode:
+    """
+    Font descriptor.
+
+    """
+
+    bidi: property
 
 
 @dataclass

@@ -1,7 +1,15 @@
 from ..base import AtRule
 
+"""
 
-class ViewPort(AtRule):
+Viewport
+
+Area of the canvas document intends to use.
+
+"""
+
+
+class Viewport(AtRule):
     viewport_fit: property
     user_zoom: property
     orientation: property

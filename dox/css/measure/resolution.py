@@ -10,6 +10,14 @@ class Resolution(float):
 class ResolutionUnits:
     x = "#x"
 
-    dpcm = "#dpcm"
+
+class DotsPerInch:
     dpi = "#dpi"
+
+
+class DotsPerCentimeter:
+    dpcm = "#dpcm"
+
+
+class DotsPerPixelUnit:
     dppx = "#dppx"

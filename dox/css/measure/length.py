@@ -1,8 +1,11 @@
 from dataclasses import dataclass
+from typing import Callable
 
 from .base import AbsoluteMeasure
 
 __all__ = ["Length"]
+
+calc: Callable
 
 
 class AbsoluteLength(AbsoluteMeasure, type):
@@ -21,18 +24,40 @@ class FontRelativeUnit(RelativeUnit):
     cap = "#cap"
     ch = "#ch"
 
-    em = "#em"
-    ex = "#ex"
 
-    rem = "#rem"
+class Em(RelativeUnit):
+    symbol = "em"
 
 
-class ViewportPercentageUnit(RelativeUnit):
+class Ex(RelativeUnit):
+    """
+    Height of a lowercase x.
+
+    """
+
+    symbol = "ex"
+
+
+class RootEm(RelativeUnit):
+    symbol = "rem"
+
+
+class ViewportRelativeUnit(RelativeUnit):
+    # 1/100th of viewport height
     vh = "#vh"
+
+    # 1/100th of viewport width
     vw = "#vw"
 
     vmin = "#vmin"
     vmax = "#vmax"
+
+
+class ViewportCentiheight(ViewportRelativeUnit):
+    pass
+
+
+# [TODO] finish
 
 
 class Fraction:
@@ -45,15 +70,39 @@ class Fraction:
 
 
 @dataclass
-class LengthUnits:
-    mm = "#mm"
-
-    cm = "#cm"
-
-    __in = "#in"
+class LengthUnit:
 
     Q = "#Q"
 
-    pc = "#pc"
-    pt = "#pt"
-    px = "#px"
+
+class Millimeter(LengthUnit):
+    symbol = "mm"
+
+
+class Centimeter(LengthUnit):
+    symbol = "cm"
+
+
+class Inch(LengthUnit):
+    abbr = "in"
+
+
+class Pixel(
+    LengthUnit,
+    CssType,
+    SvgType,
+):
+    """
+    Size required to yield 96 ppi.
+
+    """
+
+    abbr = "px"
+
+
+class Pica(LengthUnit):
+    abbr = "pc"
+
+
+class Point(LengthUnit):
+    abbr = "pt"
