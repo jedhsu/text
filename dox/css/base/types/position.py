@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 
-
+# [TODO] finish
 @dataclass
-class Url:
-    url: type
-    url_: Callable
+class Position:
+    pass

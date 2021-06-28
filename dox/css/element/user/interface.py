@@ -1,0 +1,2 @@
+class UserInterfaceElement(Element):
+    pass

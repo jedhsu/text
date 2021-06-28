@@ -5,44 +5,6 @@ from ..measure import Length
 __all__ = ["Text"]
 
 
-class TextTransform:
-    """
-    Transform case.
-
-    """
-
-    # keyword = "text-transform"
-
-    Capitalize = "capitalize"
-    Uppercase = "uppercase"
-    Lowercase = "lowercase"
-    None_ = "none"  # disable
-
-
-class TextDecoration:
-    Underline = "underline"
-    Overline = "overline"
-    LineThrough = "line-through"
-    Blink = "blink"
-    None_ = "none"
-
-
-class DecorationStyle:
-    Solid = "solid"
-    Double = "double"
-    Dotted = "dotted"
-    Dashed = "dashed"
-    Wavy = "wavy"
-
-
-class TextRendering:
-    Auto = "auto"
-
-    OptimizeSpeed = "optimizeSpeed"
-    OptimizeLegibility = "optimizeLegibility"
-    GeometricPrecision = "geometricPrecision"
-
-
 @dataclass
 class _Transform_:
     overflow: property
@@ -65,87 +27,6 @@ class _Decorate_:
     decoration_skip: type
     decoration_skip_ink: type
     decoration_thickness: type
-
-
-class TextOrientation:
-    Mixed = "mixed"
-    Upright = "upright"
-    Sideways = "sideways"
-
-
-class Direction:
-    LeftToRight = "ltr"
-    RightToLeft = "rtl"
-
-
-@dataclass
-class _Align_:
-    align: type
-    combine_upright: type
-
-    justify: type
-    orientation: TextOrientation
-    indent: Length
-
-
-class HorizontalAlign:
-    """
-    (Text Align)
-
-    """
-
-    Start = "start"
-    End = "end"
-
-    Left = "left"
-    Right = "right"
-    Center = "center"
-    Justify = "justify"
-
-
-class VerticalAlign:
-    """
-    vertical-align
-
-    """
-
-    Baseline = "baseline"
-    Subscript = "sub"
-    Superscript = "super"
-
-    Top = "top"
-    Middle = "middle"
-    Bottom = "bottom"
-
-    TextTop = "text-top"
-    TextBottom = "text-bottom"
-
-
-class TextIndent(Length, Percentage):
-    pass
-
-
-class TextAlignLast(TextAlign):
-    """
-    Text alignment of last line.
-
-    """
-
-    pass
-
-
-class LetterSpacingKeyword:
-    Normal = "normal"
-
-
-class LetterSpacing(LetterSpacingKeyword, Length):
-    pass
-
-
-class Hyphens:
-    Auto = "auto"
-    Manual = "manual"
-    None_ = "none"
 
 
 class HangingPunctuation:
@@ -181,14 +62,3 @@ class Text(
     _Transform_,
 ):
     pass
-
-
-class Whitespace:
-    """
-    Whitespace colllapsing.
-
-    """
-
-    Normal = "normal"
-    Nowrap = "nowrap"
-    PreLine = "pre-line"

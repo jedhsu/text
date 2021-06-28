@@ -1,19 +1,8 @@
-"""
-
-Image base type.
-
-"""
-
 from dataclasses import dataclass
-from typing import Callable
-
-
-class _Image(type):
-    pass
 
 
 @dataclass
-class Image:
+class Image(Property):
     # ONE OF
 
     # [TODO] url
@@ -27,10 +16,3 @@ class Image:
     orientation: property
     rendering: property
     resolution: property
-
-
-@dataclass
-class Paint:
-    paint_: Callable
-
-    paint_order: property

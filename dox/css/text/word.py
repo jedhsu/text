@@ -9,19 +9,6 @@ class WordBreak:
     KeepAll = "keep-all"
 
 
-class WordSpacingKeyword:
-    Normal = "normal"
-
-
-class WordSpacing(WordSpacingKeyword, Length):
-    """
-    Spacing between each word.
-
-    """
-
-    pass
-
-
 class WordWrap:
     Normal = "normal"
     BreakWord = "break-word"

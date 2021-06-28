@@ -23,21 +23,6 @@ attr_: Callable
 # ::after (:after)
 
 
-class WritingMode:
-    """
-    Sets orientation of text and blocks.
-
-    """
-
-    HorizontalTB = "horizontal-tb"
-
-    VerticalLR = "vertical-lr"
-    VerticalRL = "vertical-rl"
-
-    SidewaysLR = "sideways-lr"
-    SidewaysRL = "sideways-rl"
-
-
 @dataclass
 class Block:
     overflow: property
@@ -183,11 +168,6 @@ class Placeholder:
     placeholder: PseudoElement
 
 
-@dataclass
-class Position:
-    _position: type
-
-
 resize: property
 
 
@@ -215,8 +195,6 @@ class Property:
     initial_value: property
     inherits: property
 
-
-tab_size: property
 
 table_layout: property
 
