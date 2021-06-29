@@ -2,6 +2,8 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Annotated, Callable
 
+from dox.css._base import Property
+
 from . import AtRule
 
 
@@ -21,10 +23,13 @@ class Font:
 
     font_stretch: property
     font_style: property
-    font_synthesis: property
 
     font_variation_settings: property
     font_weight: property
+
+
+class FontSynthesis(Property):
+    pass
 
 
 @dataclass

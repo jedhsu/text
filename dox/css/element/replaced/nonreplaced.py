@@ -1,0 +1,2 @@
+class NonReplacedElement(Element):
+    pass

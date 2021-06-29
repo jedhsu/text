@@ -1,19 +1,26 @@
+from abc import ABCMeta
+
 from dataclasses import dataclass
 
 from ._type import Type
 from ._unit import UnitMeasure
 
 
+# [TODO] subclass Dimension?
+
+
 @dataclass
 class Frequency:
+    ident = Ident("frequency-percentage")
+
     frequency: type
-    percentage: type
+    unit: type
 
 
 class UnitFrequency(
     UnitMeasure,
 ):
-    pass
+    __metaclass__ = ABCMeta
 
 
 class Hertz(

@@ -1,0 +1,4 @@
+class Supports(
+    FeatureQuery,
+):
+    pass

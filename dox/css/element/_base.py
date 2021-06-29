@@ -13,14 +13,6 @@ class NonReplacedElement(Element):
     pass
 
 
-class BlockElement(Element):
-    pass
-
-
-class InlineElement(Element):
-    pass
-
-
 """
 
 [SVG]

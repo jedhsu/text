@@ -1,0 +1,2 @@
+class PseudoClass:
+    pass
