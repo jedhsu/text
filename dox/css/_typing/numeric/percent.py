@@ -1,11 +1,11 @@
 """
 
-Percentage Type
+Percent Type
 
 """
 
 
-class Percentage(
+class Percent(
     Number,
 ):
     pass

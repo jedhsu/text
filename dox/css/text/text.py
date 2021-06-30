@@ -46,14 +46,6 @@ class HangingPunctuation:
 
 
 @dataclass
-class _Emphasis_:
-    emphasis: type
-    emphasis_color: type
-    emphasis_position: type
-    emphasis_style: type
-
-
-@dataclass
 class Text(
     _Emphasis_,
     _Align_,

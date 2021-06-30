@@ -23,11 +23,6 @@ attr_: Callable
 # ::after (:after)
 
 
-@dataclass
-class Block:
-    overflow: property
-    size: property
-
 
 @dataclass
 class Box:
@@ -141,16 +136,8 @@ class Psuedo:
     elements: property
 
 
-@dataclass
-class Block:
-    start: int
-    end: int
-
 
 @dataclass
-class Inline:
-    start: int
-    end: int
 
 
 part: PseudoElement

@@ -1,10 +1,3 @@
-"""
-
-RGB + alpha channel
-
-"""
-
-
 from typing import Annotated
 from dataclasses import dataclass
 
@@ -12,13 +5,13 @@ from ..numeric import Percent
 
 
 @dataclass
-class Rgba(
+class Hsla(
     Type,
 ):
-    red: Annotated[int, ValueRange(0, 255)]
-    green: Annotated[int, ValueRange(0, 255)]
-    blue: Annotated[int, ValueRange(0, 255)]
-    alpha: Annotated[int, ValueRange(0, 255)]
+    hue: Annotated[int, ValueRange(0, 360)]
+    saturation: Percent
+    light: Percent
+    alpha: Percent
 
     @classmethod
     def from_keyword(cls):

@@ -14,7 +14,7 @@ __all__ = ["Property"]
 @dataclass
 class Property:
     __metaclass__ = ABCMeta
-    values: Sequence[str]
+    values: Values
 
 
 class ShorthandProperty(Property):
