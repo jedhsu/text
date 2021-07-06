@@ -1,11 +1,18 @@
-from ..base import Property
+"""
+
+    *Position*
+
+"""
+
+from enum import Enum
+
+__all__ = ["Position"]
 
 
-class Positioning:
-    pass
-
-
-class Position(Property):
+class Position(
+    Enum,
+    Property,
+):
     Static = "static"
     Relative = "relative"
     Absolute = "absolute"

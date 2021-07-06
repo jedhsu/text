@@ -1,0 +1,4 @@
+class BorderSmoothingRadius(
+    Length,
+):
+    pass

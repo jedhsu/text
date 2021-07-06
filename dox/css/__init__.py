@@ -195,7 +195,6 @@ class User:
 
 
 # pertaining element
-visibility: property
 isolation: property
 will_change: property
 

@@ -16,5 +16,4 @@ class BlockElement(
 
 # @dataclass
 # class Block:
-#     overflow: property
 #     size: property
