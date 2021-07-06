@@ -1,3 +1,9 @@
+"""
+
+    *property op*
+
+"""
+
 from ._operator import PropertyOperator
 
 from .declare import PropertyDeclare

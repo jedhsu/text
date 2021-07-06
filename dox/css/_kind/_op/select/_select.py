@@ -1,19 +1,19 @@
 """
 
-    *Selector*
+    *Select*
 
-  A type of selector.
+  Select elements.
 
 """
 
 from dataclasses import dataclass
 from abc import ABCMeta
 
-__all__ = ["Selector"]
+__all__ = ["Select"]
 
 
 @dataclass
-class Selector:
+class Select:
     __metaclass__ = ABCMeta
 
     ident: str

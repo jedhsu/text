@@ -6,7 +6,7 @@
 
 """
 
-from ._selector import Selector
+from .._selector import Selector
 
 __all__ = ["ElementSelector"]
 
