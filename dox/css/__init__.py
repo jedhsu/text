@@ -24,10 +24,6 @@ attr_: Callable
 
 
 
-@dataclass
-class Box:
-    decoration_break: type
-    sizing: type
 
 
 caption_side: property

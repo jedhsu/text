@@ -1,6 +1,22 @@
+"""
+
+    *Box-Model*
+
+"""
+
+from dataclasses import dataclass
+
+from .content import ContentBox
+from .padding import PaddingBox
+from .border import BorderBox
+from .margin import MarginBox
+
+__all__ = ["BoxModel"]
+
+
+@dataclass
 class BoxModel:
-    content_area: ContentArea
-    content_box: ContentBox
-    padding_box: PaddingBox
-    border_box: BorderBox
-    margin_box: MarginBox
+    content: ContentBox
+    padding: PaddingBox
+    border: BorderBox
+    margin: MarginBox

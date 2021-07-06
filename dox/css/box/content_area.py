@@ -1,2 +1,0 @@
-class ContentArea:
-    pass

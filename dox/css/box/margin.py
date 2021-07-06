@@ -1,21 +1,17 @@
-from dataclasses import dataclass
+"""
+
+    *Margin-Box*
+
+  The margin element of the box model.
+
+"""
+
+from ._box import Box
+
+__all__ = ["MarginBox"]
 
 
-class MarginDimensions(Dimensions):
-    bottom: type
-    left: type
-    right: type
-    top: type
-
-
-@dataclass
-class Margin:
-    block: type
-    block_start: type
-    block_end: type
-
-    inline: type
-    inline_start: type
-    inline_end: type
-
-    trim: type
+class MarginBox(
+    Box,
+):
+    pass
