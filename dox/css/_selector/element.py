@@ -1,10 +1,12 @@
 """
 
-Element Selector
+    *Element-Selector*
+
+  An element selector.
 
 """
 
-from ._base import Selector
+from ._selector import Selector
 
 __all__ = ["ElementSelector"]
 
@@ -12,4 +14,10 @@ __all__ = ["ElementSelector"]
 class ElementSelector(
     Selector,
 ):
-    pass
+    def __init__(
+        self,
+        ident: str,
+    ):
+        super(ElementSelector, self).__init__(
+            ident,
+        )

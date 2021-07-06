@@ -1,12 +1,14 @@
 """
 
-Property
+    *Property*
 
+  A property type.
 """
 
-from typing import Sequence
 from dataclasses import dataclass
 from abc import ABCMeta
+
+from .values import Values
 
 __all__ = ["Property"]
 
@@ -14,8 +16,5 @@ __all__ = ["Property"]
 @dataclass
 class Property:
     __metaclass__ = ABCMeta
+
     values: Values
-
-
-class ShorthandProperty(Property):
-    pass

@@ -1,16 +1,22 @@
 """
 
-Class Selector
+    *Class-Selector*
 
 """
 
 
 __all__ = ["ClassSelector"]
 
-from ._base import Selector
+from ._selector import Selector
 
 
 class ClassSelector(
     Selector,
 ):
-    pass
+    def __init__(
+        self,
+        ident: str,
+    ):
+        super(ClassSelector, self).__init__(
+            ident,
+        )

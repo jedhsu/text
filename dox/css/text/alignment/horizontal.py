@@ -1,15 +1,15 @@
 """
 
-HorizontalTextAlignment
+    *Horizontal-Text-Alignment*
 
-Horizontal text alignment.
+  Horizontal text alignment.
 
 """
 
-__all__ = ["HorizontalTextAlignment"]
-
 from dataclasses import dataclass
 from enum import Enum
+
+__all__ = ["HorizontalTextAlignment"]
 
 
 class HorizontalTextAlignment(
@@ -24,7 +24,7 @@ class HorizontalTextAlignment(
     Justify = "justify"
 
     MatchParent = "match-parent"
-    StartEnd = "start end"
+    StartEnd = "start-end"
 
 
 @dataclass

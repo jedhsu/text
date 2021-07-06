@@ -1,10 +1,10 @@
 """
 
-Type Selector
+    *Type-Selector*
 
 """
 
-from ._base import Selector
+from ._selector import Selector
 
 __all__ = ["TypeSelector"]
 
@@ -12,4 +12,10 @@ __all__ = ["TypeSelector"]
 class TypeSelector(
     Selector,
 ):
-    pass
+    def __init__(
+        self,
+        ident: str,
+    ):
+        super(TypeSelector, self).__init__(
+            ident,
+        )

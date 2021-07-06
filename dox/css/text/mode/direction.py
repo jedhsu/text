@@ -1,10 +1,11 @@
 """
 
-Text Direction
+    *Text-Direction*
 
-Controls the direction of text.
+  Controls the direction of text.
 
 """
+
 __all__ = ["TextDirection"]
 
 

@@ -1,15 +1,23 @@
 """
 
-Universal Selector
+    *Universal-Selector*
 
 """
 
-__all__ = ["UniversalSelector"]
 
-from ._base import Selector
+from ._selector import Selector
+
+
+__all__ = ["UniversalSelector"]
 
 
 class UniversalSelector(
     Selector,
 ):
-    pass
+    def __init__(
+        self,
+        ident: str,
+    ):
+        super(UniversalSelector, self).__init__(
+            ident,
+        )
