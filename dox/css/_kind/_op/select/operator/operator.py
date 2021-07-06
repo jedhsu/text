@@ -6,14 +6,6 @@ class Operator:
     __metaclass__ = ABCMeta
 
 
-class SelectDescendant(Operator):
-    symbol = " "
-
-
-class SelectChild(Operator):
-    symbol = ">"
-
-
 class SelectSibling(Operator):
     symbol = "+"
 

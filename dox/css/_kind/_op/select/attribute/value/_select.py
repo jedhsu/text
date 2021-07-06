@@ -6,6 +6,8 @@
 
 """
 
+from abc import ABCMeta
+
 from .._select import AttributeSelect
 
 __all__ = ["AttributeValueSelect"]

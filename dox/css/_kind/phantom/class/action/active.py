@@ -1,0 +1,4 @@
+class ActiveUserActionPhantomClass(
+    UserActionPhantomClass,
+):
+    pass
