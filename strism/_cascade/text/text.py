@@ -8,7 +8,6 @@ __all__ = ["Text"]
 @dataclass
 class _Transform_:
     overflow: property
-    rendering: TextRendering
     shadow: property
     size_adjust: property
     transform: property

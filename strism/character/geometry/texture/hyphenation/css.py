@@ -4,6 +4,8 @@
 
 """
 
+__all__ = ["TextHyphentation"]
+
 
 class TextHyphenation:
     Auto = "auto"

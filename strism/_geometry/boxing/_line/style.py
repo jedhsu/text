@@ -1,6 +1,8 @@
 """
 
-    Line-Style
+    *Line-Style*
+
+  Style for a generic line.
 
 """
 
