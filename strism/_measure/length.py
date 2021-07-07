@@ -1,6 +1,6 @@
 """
 
-    Length
+    *Length*
 
   A measure of length.
 
@@ -10,9 +10,7 @@ from abc import ABCMeta
 
 from ._measure import Measure
 
-__all__ = [
-    "Length",
-]
+__all__ = ["Length"]
 
 
 class Length(

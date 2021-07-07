@@ -14,4 +14,12 @@ __all__ = ["BorderBottomColor"]
 class BorderBottomColor(
     BorderSideColor,
 ):
-    pass
+    def __init__(
+        self,
+        *args,
+        **kwargs,
+    ):
+        return super(BorderBottomColor, self).__init__(
+            *args,
+            **kwargs,
+        )

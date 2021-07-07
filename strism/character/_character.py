@@ -6,6 +6,13 @@
 
 """
 
+from dataclasses import dataclass
+
+from strism._abstract import AbstractCharacter
+
+from .geometry import CharacterGeometry
+
+__all__ = ["Character"]
 
 @dataclass
 class Character(

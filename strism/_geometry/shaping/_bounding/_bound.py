@@ -6,6 +6,8 @@
 
 """
 
+from .._shaping import ElementShaping
+
 __all__ = ["ElementShapeBound"]
 
 

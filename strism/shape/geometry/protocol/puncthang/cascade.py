@@ -3,7 +3,7 @@
     *Cascade: Hanging-Punctuation*
 
   Hanging-punctuation, the CSS property syntax form.
-    
+
   Specifies whether punctuation should hang
   at the start or end of a line of text.
 

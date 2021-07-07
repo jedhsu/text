@@ -8,15 +8,17 @@
 
 from dataclasses import dataclass
 
-from dox._base.character import CharacterSpace
-from dox._base.string import String
+from strism._abstract.character import AbstractCharacterSpace
+from strism._abstract.string import AbstractString
 
 from .._operator import StringOperator
+
+__all__ = ["WordSplit"]
 
 
 @dataclass
 class WordSplit(
     StringOperator,
 ):
-    string: String
-    space: CharacterSpace
+    string: AbstractString
+    space: AbstractCharacterSpace

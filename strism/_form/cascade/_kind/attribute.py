@@ -1,13 +1,15 @@
 """
 
-    *Attribute*
+    *Cascade: Attribute*
 
-  The attribute categorization.
+  The attribute syntax form of the CSS language.
 
 """
 
 from ._kind import Kind
 
+__all__ = ["CascadeAttribute"]
 
-class Attribute:
+
+class CascadeAttribute:
     __metaclass__ = Kind

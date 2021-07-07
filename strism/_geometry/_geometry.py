@@ -6,6 +6,11 @@
 
 """
 
+from .boxing import Boxing
+from .coloring import Coloring
+from .positioning import Positioning
+from .shaping import Shaping
+
 __all__ = ["Geometry"]
 
 

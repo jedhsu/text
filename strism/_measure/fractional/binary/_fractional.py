@@ -1,6 +1,6 @@
 """
 
-    Binary Fractional
+    *Binary Fractional*
 
   The base 2 fractional measure.
 

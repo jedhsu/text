@@ -1,13 +1,13 @@
 """
 
-    *Class*
+    *Cascade: Class*
 
-  The class categorization.
+  The class syntax form of the CSS language.
 
 """
 
 from ._kind import Kind
 
 
-class Class:
+class CascadeClass:
     __metaclass__ = Kind

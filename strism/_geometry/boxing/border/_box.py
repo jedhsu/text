@@ -1,8 +1,8 @@
 """
 
-    Border Box
+    *Border-Boxing*
 
-  The border element of the box model.
+  The border box element of the box model.
 
 """
 

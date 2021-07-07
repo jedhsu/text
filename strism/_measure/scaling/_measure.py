@@ -1,6 +1,6 @@
 """
 
-    Scaling Measure
+    *Scaling Measure*
 
   A scaling measure.
 

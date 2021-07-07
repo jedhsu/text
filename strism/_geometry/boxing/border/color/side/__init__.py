@@ -2,7 +2,7 @@
 
     *geo . box . bord . clr . side*
 
-  Border side color types.
+  Border-side color types.
 
 """
 

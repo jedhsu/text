@@ -42,7 +42,3 @@ class AbstractString(
         string: str,
     ):
         return cls([AbstractCharacter(char) for char in string])
-
-
-class Test:
-    pass

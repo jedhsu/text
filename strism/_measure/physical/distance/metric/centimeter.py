@@ -1,6 +1,6 @@
 """
 
-    Centimeter
+    *Centimeter*
 
   The metric centimeter unit distance measure.
 
@@ -8,18 +8,15 @@
 
 from abc import ABCMeta
 
-from ..._unit import UnitDistance
+from strism._measure.unit import UnitDistance
+
 from ._distance import MetricDistance
 
-from wich.literal.float_ import Float
-
-__all__ = [
-    "Centimeter",
-]
+__all__ = ["Centimeter"]
 
 
 class Centimeter(
-    Float,
+    float,
     MetricDistance,
     UnitDistance,
 ):
@@ -27,8 +24,9 @@ class Centimeter(
 
     def __init__(
         self,
-        float: float,
+        flt: float,
     ):
-        super(Centimeter, self).__init__(
+        super(Centimeter, self).__new__(
             float,
+            flt,
         )

@@ -1,6 +1,6 @@
 """
 
-    Eighth
+    *Eighth*
 
   The eighth fractional measure.
 

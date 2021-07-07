@@ -1,6 +1,6 @@
 """
 
-    Half
+    *Half*
 
   The half fractional measure.
 
@@ -8,9 +8,7 @@
 
 from ._fractional import BinaryFractional
 
-__all__ = [
-    "Half",
-]
+__all__ = ["Half"]
 
 
 class Half(

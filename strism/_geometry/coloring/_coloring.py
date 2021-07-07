@@ -8,9 +8,10 @@
 
 from dataclasses import dataclass
 
-__all__ = [
-    "Coloring",
-]
+from .background import BackgroundColor
+from .foreground import ForegroundColor
+
+__all__ = ["Coloring"]
 
 
 @dataclass

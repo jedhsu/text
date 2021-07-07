@@ -1,6 +1,6 @@
 """
 
-    distance metric
+    *meas . phys . dist . met*
 
   Distance measures of the metric system.
 

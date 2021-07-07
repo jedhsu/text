@@ -14,4 +14,12 @@ __all__ = ["ForegroundColor"]
 class ForegroundColor(
     Color,
 ):
-    pass
+    def __init__(
+        self,
+        *args,
+        **kwargs,
+    ):
+        super(ForegroundColor, self).__init__(
+            *args,
+            **kwargs,
+        )
