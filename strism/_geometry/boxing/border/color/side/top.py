@@ -1,0 +1,4 @@
+class BorderTopColor(
+    BorderSideColor,
+):
+    pass

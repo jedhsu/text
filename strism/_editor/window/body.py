@@ -1,0 +1,4 @@
+class WindowBody(
+    WindowElement,
+):
+    pass

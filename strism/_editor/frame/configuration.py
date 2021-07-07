@@ -1,0 +1,2 @@
+class FrameConfiguration:
+    pass

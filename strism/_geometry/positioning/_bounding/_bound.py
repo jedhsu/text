@@ -1,0 +1,4 @@
+class ElementPositionBound(
+    ElementPositioning,
+):
+    pass

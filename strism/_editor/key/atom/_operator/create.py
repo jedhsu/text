@@ -1,0 +1,4 @@
+class KeyseqCreate(
+    CreateMethod,
+):
+    pass

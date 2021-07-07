@@ -1,0 +1,4 @@
+class WindowBufferOperator(
+    WindowOperator,
+):
+    pass
