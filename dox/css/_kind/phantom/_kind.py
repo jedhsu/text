@@ -1,2 +1,0 @@
-class PhantomKind(Kind):
-    pass

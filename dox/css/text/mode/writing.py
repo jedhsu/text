@@ -1,11 +1,13 @@
 """
 
-Sets orientation of text and blocks.
+  Sets orientation of text and blocks.
+
+  Combines 
 
 """
 
 
-class WritingMode(:
+class WritingMode
 
     HorizontalTB = "horizontal-tb"
 
