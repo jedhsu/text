@@ -1,0 +1,4 @@
+class BottomMidpoint(
+    Midpoint,
+):
+    pass
