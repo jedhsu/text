@@ -7,7 +7,7 @@
 
 """
 
-from dox._abstract.character import AbstractAlphabeticSpace
+from strism._abstract.letter import AbstractAlphabeticSpace
 
 from ..string import AbstractString
 from ._word import AbstractWord

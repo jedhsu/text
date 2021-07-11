@@ -1,5 +1,5 @@
 """
-    
+
     graphical distance
 
   Graphical distance measures.

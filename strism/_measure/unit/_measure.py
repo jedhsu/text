@@ -1,8 +1,8 @@
 """
 
-    Unit Measure
+    *Unit Measure*
 
-  The unit of measure type.
+  A unit of measure type.
 
 """
 

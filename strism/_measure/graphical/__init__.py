@@ -1,13 +1,11 @@
 """
 
-    measure graphical
+    *meas . gph*
 
-  Digital graphical distance unit measures.
+  Unit measures of digital graphical systems.
 
 """
 
 from ._graphical import GraphicalMeasure
 
-__all__ = [
-    "GraphicalMeasure",
-]
+__all__ = ["GraphicalMeasure"]

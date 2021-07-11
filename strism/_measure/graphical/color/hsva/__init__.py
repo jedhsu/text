@@ -1,6 +1,6 @@
 """
 
-    color hsba
+    *meas . gph*
 
   Hsba color system.
 

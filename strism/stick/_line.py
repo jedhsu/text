@@ -1,8 +1,8 @@
 """
 
-    *Line*
+    *Stick*
 
-  A string imbued with line geometry.
+  A string imbued with plane geometry.
 
 """
 
@@ -10,13 +10,13 @@ from dataclasses import dataclass
 
 from ..string import String
 
-from .geometry import LineGeometry
+from .geometry import StickGeometry
 
-__all__ = ["Line"]
+__all__ = ["Stick"]
 
 
 @dataclass
-class Line(
+class Stick(
     String,
 ):
-    geometry: LineGeometry
+    geometry: StickGeometry

@@ -1,3 +1,13 @@
+"""
+
+    *Saturation*
+
+  The saturation percentage spectral.
+
+"""
+
+from strism._measure.spectral import Spectral
+
 __all__ = ["Saturation"]
 
 

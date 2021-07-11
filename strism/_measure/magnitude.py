@@ -1,6 +1,6 @@
 """
 
-    Magnitude
+    *Magnitude*
 
   A measure of magnitude.
 

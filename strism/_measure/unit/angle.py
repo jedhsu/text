@@ -1,6 +1,6 @@
 """
 
-    Unit Angle
+    *Unit Angle*
 
   A unit measure of angle.
 

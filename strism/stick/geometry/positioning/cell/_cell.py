@@ -2,11 +2,11 @@
 
     *Cell*
 
-  Abstract container for a character.
+  Abstract container for a letter.
 
 """
 
-from ..quad import Quad
+from strism._shape.quad import Quad
 
 __all__ = ["Cell"]
 

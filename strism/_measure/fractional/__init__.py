@@ -1,8 +1,8 @@
 """
 
-    measure fractional
+    *meas . frac*
 
-  Fractional measures.
+  Fractional measure types.
 
 """
 

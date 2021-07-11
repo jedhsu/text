@@ -1,4 +1,0 @@
-class BottomMidpoint(
-    Midpoint,
-):
-    pass

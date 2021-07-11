@@ -11,7 +11,7 @@
 
 from dataclasses import dataclass
 
-from ..character import AbstractCharacterSpace
+from ..letter import AbstractLetterSpace
 from ..word import AbstractWord
 
 
@@ -28,7 +28,7 @@ class AbstractChunk(
         self,
         word: AbstractWord,
         element: AbstractWord,
-        space: AbstractCharacterSpace,
+        space: AbstractLetterSpace,
     ):
         self.element = element
         super(AbstractChunk, self).__init__(

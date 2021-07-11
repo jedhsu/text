@@ -1,6 +1,6 @@
 """
 
-    Measure
+    *Measure*
 
   The measure type.
 
@@ -8,9 +8,7 @@
 
 from abc import ABCMeta
 
-__all__ = [
-    "Measure",
-]
+__all__ = ["Measure"]
 
 
 class Measure:

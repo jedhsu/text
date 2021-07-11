@@ -8,7 +8,7 @@
 
 from ....ring import Ring
 
-# [TODO] fix metaclass
+# [TODO] metaclass?
 
 
 class Hue(

@@ -10,7 +10,7 @@
 
 from dataclasses import dataclass
 
-from wich.measure.spectral import Spectral
+from strism._measure.spectral import Spectral
 
 from .._color import GraphicalColor
 from ..opacity import OpacitySpectral

@@ -8,7 +8,7 @@
 
 from ._element import AbstractElement
 
-from .character import AbstractCharacter
+from .letter import AbstractLetter
 from .string import AbstractString
 from .word import AbstractWord
 from .chunk import AbstractChunk
@@ -19,7 +19,7 @@ from .page import AbstractPage
 
 __all__ = [
     "AbstractElement",
-    "AbstractCharacter",
+    "AbstractLetter",
     "AbstractString",
     "AbstractWord",
     "AbstractChunk",

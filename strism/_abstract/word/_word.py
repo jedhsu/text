@@ -3,12 +3,12 @@
     *Abstract Word*
 
   An abstract word is an abstract string whose elements
-  are restricted to an abstract character space.
+  are restricted to an abstract letter space.
 
 """
 
 from dataclasses import dataclass
-from dox._abstract.character import AbstractCharacterSpace
+from strism._abstract.letter import AbstractLetterSpace
 
 from ..string import AbstractString
 
@@ -19,12 +19,12 @@ __all__ = ["AbstractWord"]
 class AbstractWord(
     AbstractString,
 ):
-    space: AbstractCharacterSpace
+    space: AbstractLetterSpace
 
     def __init__(
         self,
         string: AbstractString,
-        space: AbstractCharacterSpace,
+        space: AbstractLetterSpace,
     ):
         self.space = space
         super(AbstractWord, self).__init__(

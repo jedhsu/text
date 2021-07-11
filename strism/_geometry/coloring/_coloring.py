@@ -8,6 +8,8 @@
 
 from dataclasses import dataclass
 
+from typing import Optional
+
 from .background import BackgroundColor
 from .foreground import ForegroundColor
 

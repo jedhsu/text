@@ -1,6 +1,6 @@
 """
 
-    Fractional
+    *Fractional*
 
   The fractional measure.
 
@@ -8,20 +8,25 @@
 
 from fractions import Fraction
 
-from wich.literal.integer import Integer
-
-__all__ = [
-    "Fractional",
-]
+from dataclasses import dataclass
 
 
+__all__ = ["Fractional"]
+
+
+@dataclass
 class Fractional(
     Fraction,
 ):
-    denominator: Integer
+    denominator: int
 
     def __init__(
         self,
         denominator: int,
     ):
-        pass
+        self.denominator = denominator
+        super(Fractional, self).__new__(
+            Fraction,
+            1,
+            self.denominator,
+        )

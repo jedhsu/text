@@ -1,6 +1,6 @@
 """
 
-    Quarter
+    *Quarter*
 
   The quarter fractional measure.
 
@@ -8,9 +8,7 @@
 
 from ._fractional import BinaryFractional
 
-__all__ = [
-    "Quarter",
-]
+__all__ = ["Quarter"]
 
 
 class Quarter(

@@ -2,7 +2,7 @@
 
     *Abstract String*
 
-  An abstract string is a sequence of abstract characters.
+  An abstract string is a sequence of abstract letters.
 
   We can partition an abstract string
   based on its abstract word.
@@ -11,17 +11,17 @@
 
 from typing import Sequence
 
-from ..character import AbstractCharacter
+from ..letter import AbstractLetter
 
 __all__ = ["AbstractString"]
 
 
 class AbstractString(
-    tuple[AbstractCharacter],
+    tuple[AbstractLetter],
 ):
     def __init__(
         self,
-        chars: Sequence[AbstractCharacter],
+        chars: Sequence[AbstractLetter],
     ):
         super(AbstractString, self).__new__(
             tuple,
@@ -34,11 +34,11 @@ class AbstractString(
         *char: str,
     ):
         chars = [*char]
-        return cls([AbstractCharacter(char) for char in chars])
+        return cls([AbstractLetter(char) for char in chars])
 
     @classmethod
     def from_str(
         cls,
         string: str,
     ):
-        return cls([AbstractCharacter(char) for char in string])
+        return cls([AbstractLetter(char) for char in string])

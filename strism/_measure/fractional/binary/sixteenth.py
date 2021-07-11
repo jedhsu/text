@@ -1,6 +1,6 @@
 """
 
-    Sixteenth
+    *Sixteenth*
 
   The sixteenth fractional measure.
 
@@ -8,9 +8,7 @@
 
 from ._fractional import BinaryFractional
 
-__all__ = [
-    "Sixteenth",
-]
+__all__ = ["Sixteenth"]
 
 
 class Sixteenth(

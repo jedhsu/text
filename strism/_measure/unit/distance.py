@@ -1,6 +1,6 @@
 """
 
-    Unit Distance
+    *Unit Distance*
 
   A unit measure of distance.
 

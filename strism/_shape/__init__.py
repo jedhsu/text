@@ -1,3 +1,4 @@
-from .pixel import Pixel
-from .coordinate import Coordinate
-from .line import Line
+from ._shape import ElementShape
+
+from .width import ElementWidth
+from .height import ElementHeight

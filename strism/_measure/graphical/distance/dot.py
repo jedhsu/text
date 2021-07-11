@@ -1,6 +1,6 @@
 """
 
-    Dot
+    *Dot*
 
   The graphical dot unit distance measure.
 
@@ -9,19 +9,15 @@
 
 from abc import ABCMeta
 
-from wich.measure.unit import UnitDistance
-from wich.literal.integer import Integer
+from strism._measure.unit import UnitDistance
 
 from ._distance import GraphicalDistance
 
-
-__all__ = [
-    "Dot",
-]
+__all__ = ["Dot"]
 
 
 class Dot(
-    Integer,
+    int,
     GraphicalDistance,
     UnitDistance,
 ):
@@ -29,8 +25,9 @@ class Dot(
 
     def __init__(
         self,
-        int: int,
+        n: int,
     ):
-        super(Integer, self).__init__(
+        super(Dot, self).__new__(
             int,
+            n,
         )

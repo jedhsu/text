@@ -1,18 +1,16 @@
 """
 
-    *Opacity-Spectral*
+    *Opacity*
 
   The spectral measure for opacity.
 
 """
 
 
-from wich.measure.scaling import Percent
-from wich.measure.spectral import Spectral
+from wich._measure.scaling import Percent
+from wich._measure.spectral import Spectral
 
-__all__ = [
-    "OpacitySpectral",
-]
+__all__ = ["OpacitySpectral"]
 
 
 class OpacitySpectral(

@@ -1,6 +1,6 @@
 """
 
-    measure
+    *meas*
 
   Measure types and their operators.
 
