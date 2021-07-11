@@ -2,7 +2,7 @@
 
     *Element*
 
-  An element is an abstract element residing in space.
+  An element is an abstract element residing in physical space.
 
   This imbues the element with a *geometry*.
 

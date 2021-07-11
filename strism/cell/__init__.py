@@ -2,6 +2,12 @@
 
     *Cell*
 
-  A cell is an abstract letter in geometric space.
+  A cell is a container for an array of pixels.
 
 """
+
+from abc import ABCMeta
+
+
+class Cell:
+    __metaclass__ = ABCMeta

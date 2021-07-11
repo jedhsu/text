@@ -2,7 +2,7 @@
 
     *Point*   (x: Pixel, y: Pixel)
 
-  A pair of pixels describing position.
+  A pair of coordinates describing position.
 
 """
 

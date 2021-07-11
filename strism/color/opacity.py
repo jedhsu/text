@@ -13,7 +13,7 @@ from wich._measure.spectral import Spectral
 __all__ = ["OpacitySpectral"]
 
 
-class OpacitySpectral(
+class Opacity(
     Percent,
     Spectral[0, 1],
 ):
@@ -21,6 +21,6 @@ class OpacitySpectral(
         self,
         value: float,
     ):
-        super(OpacitySpectral, self).__init__(
+        super(Opacity, self).__init__(
             value,
         )

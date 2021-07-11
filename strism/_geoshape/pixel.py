@@ -2,19 +2,13 @@
 
     *Pixel*
 
-"""
+  A pixel is a color in point space.
 
-__all__ = ["Pixel"]
+"""
 
 
 class Pixel(
-    int,
+    Point,
+    Color,
 ):
-    def __init__(
-        self,
-        integer: int,
-    ):
-        super(Pixel, self).__new__(
-            int,
-            integer,
-        )
+    pass
