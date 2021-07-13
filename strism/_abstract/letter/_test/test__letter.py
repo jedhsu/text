@@ -7,3 +7,6 @@ class TestAbstractLetter:
         assert isinstance(lt, AbstractLetter)
         assert isinstance(lt, str)
         assert lt == "a"
+
+    def test_invalid_init(self):
+        pass

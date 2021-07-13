@@ -1,17 +1,17 @@
 """
 
-    *Linear*
+    *Planar*
 
-  A type with linear geometry.
+  A type with planar geometry.
 
 """
 
 from abc import ABCMeta
 
-__all__ = ["Linear"]
+__all__ = ["Planar"]
 
 
-class Linear(
+class Planar(
     Geometric,
 ):
     __metaclass__ = ABCMeta
