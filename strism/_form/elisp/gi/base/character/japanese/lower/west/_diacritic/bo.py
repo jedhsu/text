@@ -1,8 +1,8 @@
 """
 
-    *Bo*   |む|   |ム|
+    *Bo*   |ぼ|   |ボ|
 
-  The _ho_ Japanese gi.
+  The _bo_ Japanese gi.
 
 """
 
@@ -24,5 +24,5 @@ class Bo(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u307b"
-    katakana = "\u30db"
+    hiragana = "\u307c"
+    katakana = "\u30dc"

@@ -1,6 +1,6 @@
 """
 
-    *Ba*   |は|   |ハ|
+    *Ba*   |ば|   |バ|
 
   The _ba_ Japanese gi.
 
@@ -24,5 +24,5 @@ class Ba(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u306f"
-    katakana = "\u30cf"
+    hiragana = "\u3070"
+    katakana = "\u30d0"

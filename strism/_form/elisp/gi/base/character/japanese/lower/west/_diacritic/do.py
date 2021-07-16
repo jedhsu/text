@@ -1,8 +1,8 @@
 """
 
-    *Do*   |む|   |ム|
+    *Do*   |ど|   |ド|
 
-  The _ho_ Japanese gi.
+  The _do_ Japanese gi.
 
 """
 
@@ -24,5 +24,5 @@ class Do(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u307b"
-    katakana = "\u30db"
+    hiragana = "\u3069"
+    katakana = "\u30c9"

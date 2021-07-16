@@ -2,7 +2,7 @@
 
     *Ge*   |げ|   |ゲ|
 
-  The _ho_ Japanese gi.
+  The _ge_ Japanese gi.
 
 """
 

@@ -1,6 +1,6 @@
 """
 
-    *Gi*   |は|   |ハ|
+    *Gi*   |ぎ|   |ギ|
 
   The _gi_ Japanese gi.
 
@@ -24,5 +24,5 @@ class Gi(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u306f"
-    katakana = "\u30cf"
+    hiragana = "\u304e"
+    katakana = "\u30ae"

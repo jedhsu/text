@@ -1,6 +1,6 @@
 """
 
-    *Ji*   |い|   |イ|
+    *Ji*   |じ|   |ジ|
 
   The _ji_ Japanese gi.
 
@@ -24,5 +24,5 @@ class Ji(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u3044"
-    katakana = "\u30a4"
+    hiragana = "\u3058"
+    katakana = "\u30b8"

@@ -1,6 +1,6 @@
 """
 
-    *Ho*   |む|   |ム|
+    *Ho*   |ほ|   |ホ|
 
   The _ho_ Japanese gi.
 

@@ -1,6 +1,6 @@
 """
 
-    *Za*   |い|   |イ|
+    *Za*   |ざ|   |ザ|
 
   The _za_ Japanese gi.
 
@@ -24,5 +24,5 @@ class Za(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u3044"
-    katakana = "\u30a4"
+    hiragana = "\u3056"
+    katakana = "\u30b6"

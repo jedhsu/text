@@ -1,6 +1,6 @@
 """
 
-    *Da*   |は|   |ハ|
+    *Da*   |だ|   |ダ|
 
   The _da_ Japanese gi.
 
@@ -24,5 +24,5 @@ class Da(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u306f"
-    katakana = "\u30cf"
+    hiragana = "\u3060"
+    katakana = "\u30c0"

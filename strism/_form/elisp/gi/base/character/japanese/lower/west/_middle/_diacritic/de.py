@@ -1,6 +1,6 @@
 """
 
-    *De*   |む|   |ム|
+    *De*   |で|   |デ|
 
   The _de_ Japanese gi.
 
@@ -24,5 +24,5 @@ class De(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u307b"
-    katakana = "\u30db"
+    hiragana = "\u3067"
+    katakana = "\u30c7"

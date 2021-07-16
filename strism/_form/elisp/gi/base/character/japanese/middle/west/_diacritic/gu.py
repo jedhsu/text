@@ -1,8 +1,8 @@
 """
 
-    *Dji*   |ぢ|   |ヂ|
+    *Gu*   |ぐ|   |グ|
 
-  The _dji_ Japanese gi.
+  The _gu_ Japanese gi.
 
 """
 
@@ -14,15 +14,15 @@ from ...._gi import Gi
 from ..._gi import JapaneseGi
 
 
-__all__ = ["Dji"]
+__all__ = ["Gu"]
 
 # [TODO] mechanism of extending
 
 
 @dataclass
-class Dji(
+class Gu(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u3062"
-    katakana = "\u30c2"
+    hiragana = "\u3050"
+    katakana = "\u30b0"

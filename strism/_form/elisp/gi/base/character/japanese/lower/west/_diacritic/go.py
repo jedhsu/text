@@ -1,8 +1,8 @@
 """
 
-    *Go*   |む|   |ム|
+    *Go*   |ご|   |ゴ|
 
-  The _ho_ Japanese gi.
+  The _go_ Japanese gi.
 
 """
 
@@ -24,5 +24,5 @@ class Go(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u307b"
-    katakana = "\u30db"
+    hiragana = "\u3054"
+    katakana = "\u30b4"

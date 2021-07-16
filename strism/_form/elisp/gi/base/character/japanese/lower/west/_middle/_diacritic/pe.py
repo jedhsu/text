@@ -1,8 +1,8 @@
 """
 
-    *Pe*   |む|   |ム|
+    *Pe*   |ぺ|   |ペ|
 
-  The _ho_ Japanese gi.
+  The _pe_ Japanese gi.
 
 """
 
@@ -24,5 +24,5 @@ class Pe(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u307b"
-    katakana = "\u30db"
+    hiragana = "\u307a"
+    katakana = "\u30da"

@@ -1,6 +1,6 @@
 """
 
-    *He*   |ほ|   |ヘ|
+    *He*   |へ|   |ヘ|
 
   The _he_ Japanese gi.
 
@@ -24,5 +24,5 @@ class He(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u307b"
+    hiragana = "\u3078"
     katakana = "\u30d8"

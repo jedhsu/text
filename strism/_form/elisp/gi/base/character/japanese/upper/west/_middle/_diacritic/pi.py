@@ -1,8 +1,8 @@
 """
 
-    *Pi*   |は|   |ハ|
+    *Pi*   |ぴ|   |ピ|
 
-  The _ha_ Japanese gi.
+  The _pi_ Japanese gi.
 
 """
 
@@ -24,5 +24,5 @@ class Pi(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u306f"
-    katakana = "\u30cf"
+    hiragana = "\u3074"
+    katakana = "\u30d4"

@@ -1,8 +1,8 @@
 """
 
-    *Be*   |む|   |ム|
+    *Be*   |べ|   |ベ|
 
-  The _ho_ Japanese gi.
+  The _be_ Japanese gi.
 
 """
 
@@ -24,5 +24,5 @@ class Be(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u307b"
-    katakana = "\u30db"
+    hiragana = "\u3079"
+    katakana = "\u30d9"

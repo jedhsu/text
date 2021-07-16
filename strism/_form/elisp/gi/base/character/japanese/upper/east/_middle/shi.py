@@ -1,6 +1,6 @@
 """
 
-    *Shi*   |じ|   |シ|
+    *Shi*   |し|   |シ|
 
   The _shi_ Japanese gi.
 

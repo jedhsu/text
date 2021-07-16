@@ -1,6 +1,6 @@
 """
 
-    *Pa*   |は|   |ハ|
+    *Pa*   |ぱ|   |パ|
 
   The _pa_ Japanese gi.
 
@@ -24,5 +24,5 @@ class Pa(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u306f"
-    katakana = "\u30cf"
+    hiragana = "\u3071"
+    katakana = "\u30d1"

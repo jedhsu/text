@@ -1,6 +1,6 @@
 """
 
-    *Ze*   |せ|   |セ|
+    *Ze*   |ぜ|   |ゼ|
 
   The _ze_ Japanese gi.
 
@@ -24,5 +24,5 @@ class Ze(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u305b"
-    katakana = "\u30bb"
+    hiragana = "\u305c"
+    katakana = "\u30bc"

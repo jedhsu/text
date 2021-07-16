@@ -1,8 +1,8 @@
 """
 
-    *Tsu*   |む|   |ム|
+    *Du*   |づ|   |ヅ|
 
-  The _tsu_ Japanese gi.
+  The _du_ Japanese gi.
 
 """
 
@@ -14,15 +14,15 @@ from ...._gi import Gi
 from ..._gi import JapaneseGi
 
 
-__all__ = ["Tsu"]
+__all__ = ["Du"]
 
 # [TODO] mechanism of extending
 
 
 @dataclass
-class Tsu(
+class Du(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u3064"
-    katakana = "\u30c4"
+    hiragana = "\u3065"
+    katakana = "\u30c5"

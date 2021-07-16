@@ -1,6 +1,6 @@
 """
 
-    *Ga*   |は|   |ハ|
+    *Ga*   |が|   |ガ|
 
   The _ga_ Japanese gi.
 
@@ -24,5 +24,5 @@ class Ga(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u306f"
-    katakana = "\u30cf"
+    hiragana = "\u304c"
+    katakana = "\u30ac"

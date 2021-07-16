@@ -1,8 +1,8 @@
 """
 
-    *Po*   |む|   |ム|
+    *Po*   |ぽ|   |ポ|
 
-  The _ho_ Japanese gi.
+  The _po_ Japanese gi.
 
 """
 
@@ -24,5 +24,5 @@ class Po(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u307b"
-    katakana = "\u30db"
+    hiragana = "\u307d"
+    katakana = "\u30dd"

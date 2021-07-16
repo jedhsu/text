@@ -1,6 +1,6 @@
 """
 
-    *Bi*   |は|   |ハ|
+    *Bi*   |び|   |ビ|
 
   The _bi_ Japanese gi.
 
@@ -24,5 +24,5 @@ class Bi(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u306f"
-    katakana = "\u30cf"
+    hiragana = "\u3073"
+    katakana = "\u30d3"

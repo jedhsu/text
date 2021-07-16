@@ -1,6 +1,6 @@
 """
 
-    *Zo*   |せ|   |セ|
+    *Zo*   |ぞ|   |ゾ|
 
   The _zo_ Japanese gi.
 
@@ -24,5 +24,5 @@ class Zo(
     Gi,
     JapaneseGi,
 ):
-    hiragana = "\u305b"
-    katakana = "\u30bb"
+    hiragana = "\u305e"
+    katakana = "\u30be"
