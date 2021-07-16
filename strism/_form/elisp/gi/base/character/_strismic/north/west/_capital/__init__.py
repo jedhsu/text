@@ -1,21 +1,25 @@
 """
 
-    *key . atom . base . char . pos . lwr . west . cap*
+    *key . atom . base . char . pos . nor . west . cap*
 
-  Lower-west capital gis.
+  North-west capital gis.
 
 """
 
-from .one import LowerWestCapital1
-from .two import LowerWestCapital2
-from .three import LowerWestCapital3
-from .four import LowerWestCapital4
-from .five import LowerWestCapital5
+from .one import NorthWestCapital1
+from .two import NorthWestCapital2
+from .three import NorthWestCapital3
+from .four import NorthWestCapital4
+from .five import NorthWestCapital5
+from .six import NorthWestCapital6
+from .seven import NorthWestCapital7
 
 __all__ = [
-    "LowerWestCapital1",
-    "LowerWestCapital2",
-    "LowerWestCapital3",
-    "LowerWestCapital4",
-    "LowerWestCapital5",
+    "NorthWestCapital1",
+    "NorthWestCapital2",
+    "NorthWestCapital3",
+    "NorthWestCapital4",
+    "NorthWestCapital5",
+    "NorthWestCapital6",
+    "NorthWestCapital7",
 ]

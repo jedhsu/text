@@ -11,6 +11,7 @@ from .four import FourGi
 from .five import FiveGi
 from .six import SixGi
 from .seven import SevenGi
+from .eight import EightGi
 
 from ._block import BlockGi
 
@@ -22,5 +23,6 @@ __all__ = [
     "FiveGi",
     "SixGi",
     "SevenGi",
+    "EightGi",
     "BlockGi",
 ]

@@ -1,8 +1,8 @@
 """
 
-    *Upper-East Block*   ⠨
+    *Upper-East 6*   ⠨
 
-  The upper-east block gi.
+  The upper-east six gi.
 
 """
 
@@ -11,18 +11,18 @@ from dataclasses import dataclass
 from ...._gi import Gi
 from ..._gi import StrismicGi
 from ...east import EasternGi
-from ..._number import BlockGi
+from ..._number import SixGi
 from .._gi import UpperGi
 
-__all__ = ["UpperEastBlock"]
+__all__ = ["UpperEast6"]
 
 
 @dataclass
-class UpperEastBlock(
+class UpperEast6(
     Gi,
     StrismicGi,
     UpperGi,
     EasternGi,
-    BlockGi,
+    SixGi,
 ):
-    pass
+    symbol = "\u2828"

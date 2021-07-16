@@ -1,8 +1,8 @@
 """
 
-    *North-West Capital 5*   ⠨
+    *North-East Capital 6*   ⠨
 
-  The north-west capital five gi.
+  The north-east capital six gi.
 
 """
 
@@ -11,20 +11,20 @@ from dataclasses import dataclass
 from ....._gi import Gi
 from ....capital import CapitalGi
 from ...._gi import StrismicGi
-from ....west import WesternGi
-from ...._number import FiveGi
+from ....east import EasternGi
+from ...._number import SixGi
 from ..._gi import NorthernGi
 
-__all__ = ["NorthWestCapital5"]
+__all__ = ["NorthEastCapital6"]
 
 
 @dataclass
-class NorthWestCapital5(
+class NorthEastCapital6(
     Gi,
     StrismicGi,
     NorthernGi,
-    WesternGi,
+    EasternGi,
     CapitalGi,
-    FiveGi,
+    SixGi,
 ):
     symbol = "\u2828"
