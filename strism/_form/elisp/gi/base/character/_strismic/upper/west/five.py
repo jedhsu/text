@@ -1,6 +1,6 @@
 """
 
-    *Upper-West 5*   ⠨
+    *Upper-West 5*   |⠟|
 
   The upper-west five gi.
 
@@ -25,4 +25,4 @@ class UpperWest5(
     WesternGi,
     FiveGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u281f"

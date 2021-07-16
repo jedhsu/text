@@ -1,6 +1,6 @@
 """
 
-    *Middle-East 4*   ⠨
+    *Middle-East 4*   |⠺|
 
   The middle-east four gi.
 
@@ -23,4 +23,4 @@ class MiddleEast4(
     EasternGi,
     FourGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u283a"

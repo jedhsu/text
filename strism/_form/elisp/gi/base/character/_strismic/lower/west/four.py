@@ -1,6 +1,6 @@
 """
 
-    *LowerWest4*   ⠨
+    *Lower-West 4*   |⠧|
 
   The lower-west four gi.
 
@@ -25,4 +25,4 @@ class LowerWest4(
     WesternGi,
     FourGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2827"

@@ -1,6 +1,6 @@
 """
 
-    *UpperWest3*   ⠨
+    *Upper-West 3*   |⠋|
 
   The upper-west three gi.
 
@@ -25,4 +25,4 @@ class UpperWest3(
     WesternGi,
     ThreeGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u280b"

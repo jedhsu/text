@@ -1,6 +1,6 @@
 """
 
-    *Upper-East 2*   ⠨
+    *Upper-East 2*   |⠘|
 
   The upper-east two gi.
 
@@ -25,4 +25,4 @@ class UpperEast2(
     EasternGi,
     TwoGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2818"

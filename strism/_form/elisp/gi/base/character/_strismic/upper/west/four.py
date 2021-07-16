@@ -1,6 +1,6 @@
 """
 
-    *UpperWest4*   ⠨
+    *Upper-West 4*   |⠏|
 
   The upper-west four gi.
 
@@ -25,4 +25,4 @@ class UpperWest4(
     WesternGi,
     FourGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u280f"

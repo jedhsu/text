@@ -1,6 +1,6 @@
 """
 
-    *MiddleWest4*   ⠨
+    *Middle-West 4*   |⠗|
 
   The middle-west four gi.
 
@@ -23,4 +23,4 @@ class MiddleWest4(
     WesternGi,
     FourGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2817"

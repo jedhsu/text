@@ -1,6 +1,6 @@
 """
 
-    *Upper-East 3*   ⠨
+    *Upper-East 3*   |⠙|
 
   The upper-east three gi.
 
@@ -25,4 +25,4 @@ class UpperEast3(
     EasternGi,
     ThreeGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2819"

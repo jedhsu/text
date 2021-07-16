@@ -1,6 +1,6 @@
 """
 
-    *Middle-West 5*   ⠨
+    *Middle-West 5*   |⠯|
 
   The middle-west five gi.
 
@@ -23,4 +23,4 @@ class MiddleWest5(
     WesternGi,
     FiveGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u282f"

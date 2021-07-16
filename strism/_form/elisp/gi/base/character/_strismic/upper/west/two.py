@@ -1,6 +1,6 @@
 """
 
-    *UpperWest2*   ⠨
+    *Upper-West 2*   |⠃|
 
   The upper-west two gi.
 
@@ -25,4 +25,4 @@ class UpperWest2(
     WesternGi,
     TwoGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2803"

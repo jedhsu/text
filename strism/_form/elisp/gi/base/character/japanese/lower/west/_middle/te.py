@@ -1,8 +1,8 @@
 """
 
-    *A*   ⠨
+    *Te*   |て|   |テ|
 
-  The _a_ Japanese gi.
+  The _te_ Japanese gi.
 
 """
 
@@ -14,14 +14,15 @@ from ...._gi import Gi
 from ..._gi import JapaneseGi
 
 
-__all__ = ["A"]
+__all__ = ["Te"]
 
 # [TODO] mechanism of extending
 
 
 @dataclass
-class A(
+class Te(
     Gi,
     JapaneseGi,
 ):
-    symbol = "\u2828"
+    hiragana = "\u3066"
+    katakana = "\u30c6"

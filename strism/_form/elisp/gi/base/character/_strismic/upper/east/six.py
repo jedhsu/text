@@ -1,6 +1,6 @@
 """
 
-    *Upper-East 6*   ⠨
+    *Upper-East 6*
 
   The upper-east six gi.
 

@@ -1,6 +1,6 @@
 """
 
-    *Middle-East 6*   ⠨
+    *Middle-East 6*
 
   The middle-east six gi.
 

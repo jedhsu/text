@@ -1,6 +1,6 @@
 """
 
-    *Middle-East 5*   ⠨
+    *Middle-East 5*   |⠽|
 
   The middle-east five gi.
 
@@ -23,4 +23,4 @@ class MiddleEast5(
     EasternGi,
     FiveGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u283d"

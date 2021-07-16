@@ -1,6 +1,6 @@
 """
 
-    *Lower-East 2*   ⠨
+    *Lower-East 2*   |⠰|
 
   The lower-east two gi.
 
@@ -25,4 +25,4 @@ class LowerEast2(
     EasternGi,
     TwoGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2830"

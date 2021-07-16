@@ -1,6 +1,6 @@
 """
 
-    *MiddleWest3*   ⠨
+    *Middle-West 3*   |⠇|
 
   The middle-west three gi.
 
@@ -23,4 +23,4 @@ class MiddleWest3(
     WesternGi,
     ThreeGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2807"

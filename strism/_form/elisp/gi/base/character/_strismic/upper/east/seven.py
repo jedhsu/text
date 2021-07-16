@@ -1,6 +1,6 @@
 """
 
-    *Upper-East 7*   ⠨
+    *Upper-East 7*
 
   The upper-east seven gi.
 

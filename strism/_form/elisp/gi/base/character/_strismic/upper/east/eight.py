@@ -1,6 +1,6 @@
 """
 
-    *Upper-East 8*   ⠨
+    *Upper-East 8*
 
   The upper-east eight gi.
 

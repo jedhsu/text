@@ -1,6 +1,6 @@
 """
 
-    *key . atom . base . char . pos . lwr . west*
+    *key . atom . base . char . pos . sou . west*
 
   South-west gis.
 

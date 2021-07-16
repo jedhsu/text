@@ -1,10 +1,12 @@
 """
 
-    *Lower-East 3*   ⠨
+    *Lower-East 3*   |⠴|
 
   The lower-east three gi.
 
 """
+
+# [TODO] note this starts become punctuation! only letter are spatial signifier
 
 from dataclasses import dataclass
 
@@ -25,4 +27,4 @@ class LowerEast3(
     EasternGi,
     ThreeGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2834"

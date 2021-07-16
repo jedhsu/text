@@ -1,8 +1,8 @@
 """
 
-    *H*   h
+    *J*   j
 
-  The _h_ gi of the English language.
+  The _j_ gi of the English language.
 
 """
 
@@ -11,12 +11,12 @@ from dataclasses import dataclass
 from ...._gi import Gi
 from ..._gi import EnglishGi
 
-__all__ = ["H"]
+__all__ = ["J"]
 
 
 @dataclass
-class H(
+class J(
     Gi,
     EnglishGi,
 ):
-    symbol = "h"
+    symbol = "j"

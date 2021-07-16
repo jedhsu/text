@@ -1,6 +1,6 @@
 """
 
-    *key . atom . base . char . pos . lwr . east*
+    *key . atom . base . char . pos . sou . east*
 
   South-east gis.
 

@@ -1,6 +1,6 @@
 """
 
-    *Middle-East 1*   ⠨
+    *Middle-East 1*   |⠐|
 
   The middle-east one gi.
 
@@ -23,4 +23,4 @@ class MiddleEast1(
     EasternGi,
     OneGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2810"

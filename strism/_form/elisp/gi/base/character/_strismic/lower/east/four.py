@@ -1,6 +1,6 @@
 """
 
-    *Lower-East 4*   ⠨
+    *Lower-East 4*   |⠼|
 
   The lower-east four gi.
 
@@ -25,4 +25,4 @@ class LowerEast4(
     EasternGi,
     FourGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u283c"

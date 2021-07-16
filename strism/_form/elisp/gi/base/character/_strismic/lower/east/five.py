@@ -1,6 +1,6 @@
 """
 
-    *Lower-East 5*   ⠨
+    *Lower-East 5*   |⠾|
 
   The lower-east five gi.
 
@@ -25,4 +25,4 @@ class LowerEast5(
     EasternGi,
     FiveGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u283e"

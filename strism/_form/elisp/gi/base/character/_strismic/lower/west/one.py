@@ -1,6 +1,6 @@
 """
 
-    *Lower-West 1*   ⠨
+    *Lower-West 1*   |⠄|
 
   The lower-west one gi.
 
@@ -25,4 +25,4 @@ class LowerWest1(
     WesternGi,
     OneGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2804"

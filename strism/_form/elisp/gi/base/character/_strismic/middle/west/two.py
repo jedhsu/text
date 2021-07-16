@@ -1,6 +1,6 @@
 """
 
-    *MiddleWest2*   ⠨
+    *Middle-West 2*   |⠅|
 
   The middle-west two gi.
 
@@ -25,4 +25,4 @@ class MiddleWest2(
     WesternGi,
     TwoGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2805"

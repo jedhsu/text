@@ -1,6 +1,6 @@
 """
 
-    *Middle-West 1*   ⠨
+    *Middle-West 1*   |⠂|
 
   The middle-west one gi.
 
@@ -23,4 +23,4 @@ class MiddleWest1(
     WesternGi,
     OneGi,
 ):
-    symbol = "\u2828"
+    symbol = "\u2802"  # fix
