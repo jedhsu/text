@@ -1,6 +1,6 @@
 """
 
-    *MiddleEast2*   ⠨
+    *Middle-East 2*   ⠨
 
   The middle-east two gi.
 

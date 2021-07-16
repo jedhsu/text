@@ -8,6 +8,8 @@
 
 from abc import ABCMeta
 
+__all__ = ["LowerGi"]
+
 
 class LowerGi:
     __metaclass__ = ABCMeta

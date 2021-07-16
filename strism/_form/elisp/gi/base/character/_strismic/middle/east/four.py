@@ -1,6 +1,6 @@
 """
 
-    *MiddleEast4*   ⠨
+    *Middle-East 4*   ⠨
 
   The middle-east four gi.
 

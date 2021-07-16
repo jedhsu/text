@@ -6,31 +6,34 @@
 
 """
 
-from .west import UpperWestReki
-from .west import UpperWestYiki
-from .west import UpperWestNiki
-from .west import UpperWestSaki
-from .west import UpperWestSeki
-from .west import UpperWestPoki
+from ._gi import UpperGi
 
-from .east import UpperEastReki
-from .east import UpperEastYiki
-from .east import UpperEastNiki
-from .east import UpperEastSaki
-from .east import UpperEastSeki
-from .east import UpperEastPoki
+from .west import UpperWest1
+from .west import UpperWest2
+from .west import UpperWest3
+from .west import UpperWest4
+from .west import UpperWest5
+from .west import UpperWestBlock
+
+from .east import UpperEast1
+from .east import UpperEast2
+from .east import UpperEast3
+from .east import UpperEast4
+from .east import UpperEast5
+from .east import UpperEastBlock
 
 __all__ = [
-    "UpperWestReki",
-    "UpperWestYiki",
-    "UpperWestNiki",
-    "UpperWestSaki",
-    "UpperWestSeki",
-    "UpperWestPoki",
-    "UpperEastReki",
-    "UpperEastYiki",
-    "UpperEastNiki",
-    "UpperEastSaki",
-    "UpperEastSeki",
-    "UpperEastPoki",
+    "UpperGi",
+    "UpperWest1",
+    "UpperWest2",
+    "UpperWest3",
+    "UpperWest4",
+    "UpperWest5",
+    "UpperWestBlock",
+    "UpperEast1",
+    "UpperEast2",
+    "UpperEast3",
+    "UpperEast4",
+    "UpperEast5",
+    "UpperEastBlock",
 ]

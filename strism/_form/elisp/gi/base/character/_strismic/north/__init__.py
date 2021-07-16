@@ -6,31 +6,38 @@
 
 """
 
-from .west import NorthWestReki
-from .west import NorthWestYiki
-from .west import NorthWestNiki
-from .west import NorthWestSaki
-from .west import NorthWestSeki
-from .west import NorthWestGoki
+from ._gi import NorthernGi
 
-from .east import NorthEastReki
-from .east import NorthEastYiki
-from .east import NorthEastNiki
-from .east import NorthEastSaki
-from .east import NorthEastSeki
-from .east import NorthEastPoki
+from .west import NorthWest1
+from .west import NorthWest2
+from .west import NorthWest3
+from .west import NorthWest4
+from .west import NorthWest5
+from .west import NorthWest6
+from .west import NorthWest7
+
+from .east import NorthEast1
+from .east import NorthEast2
+from .east import NorthEast3
+from .east import NorthEast4
+from .east import NorthEast5
+from .east import NorthEast6
+from .east import NorthEastBlock
 
 __all__ = [
-    "NorthWestReki",
-    "NorthWestYiki",
-    "NorthWestNiki",
-    "NorthWestSaki",
-    "NorthWestSeki",
-    "NorthWestGoki",
-    "NorthEastReki",
-    "NorthEastYiki",
-    "NorthEastNiki",
-    "NorthEastSaki",
-    "NorthEastSeki",
-    "NorthEastPoki",
+    "NorthernGi",
+    "NorthWest1",
+    "NorthWest2",
+    "NorthWest3",
+    "NorthWest4",
+    "NorthWest5",
+    "NorthWest6",
+    "NorthWest7",
+    "NorthEast1",
+    "NorthEast2",
+    "NorthEast3",
+    "NorthEast4",
+    "NorthEast5",
+    "NorthEast6",
+    "NorthEastBlock",
 ]

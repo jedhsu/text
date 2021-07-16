@@ -6,24 +6,27 @@
 
 """
 
-from .poki import SouthPoki
+from ._gi import SouthernGi
 
-from .west import SouthWestYiki
-from .west import SouthWestNiki
-from .west import SouthWestSaki
+from ._block import SouthBlock
 
-from .east import SouthEastReki
-from .east import SouthEastYiki
-from .east import SouthEastNiki
-from .east import SouthEastSaki
+from .west import SouthWest2
+from .west import SouthWest3
+from .west import SouthWest4
+
+from .east import SouthEast1
+from .east import SouthEast2
+from .east import SouthEast3
+from .east import SouthEast4
 
 __all__ = [
-    "SouthPoki",
-    "SouthWestYiki",
-    "SouthWestNiki",
-    "SouthWestSaki",
-    "SouthEastReki",
-    "SouthEastYiki",
-    "SouthEastNiki",
-    "SouthEastSaki",
+    "SouthernGi",
+    "SouthBlock",
+    "SouthWest2",
+    "SouthWest3",
+    "SouthWest4",
+    "SouthEast1",
+    "SouthEast2",
+    "SouthEast3",
+    "SouthEast4",
 ]

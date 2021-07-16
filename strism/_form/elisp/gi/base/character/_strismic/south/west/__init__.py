@@ -1,17 +1,17 @@
 """
 
-    *key . atom . base . char . pos . sou . west*
+    *key . atom . base . char . pos . lwr . west*
 
-  South-west positional character keys.
+  South-west gis.
 
 """
 
-from .yiki import SouthWestYiki
-from .niki import SouthWestNiki
-from .saki import SouthWestSaki
+from .two import SouthWest2
+from .three import SouthWest3
+from .four import SouthWest4
 
 __all__ = [
-    "SouthWestYiki",
-    "SouthWestNiki",
-    "SouthWestSaki",
+    "SouthWest2",
+    "SouthWest3",
+    "SouthWest4",
 ]

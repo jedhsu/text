@@ -1,6 +1,6 @@
 """
 
-    *MiddleEast3*   ⠨
+    *Middle-East 3*   ⠨
 
   The middle-east three gi.
 

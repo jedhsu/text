@@ -1,6 +1,6 @@
 """
 
-    *key . atom . base . char . pos . mid*
+    *key . atom . base . char . pos . lwr*
 
   Lower hemisphere positional character keys.
 
