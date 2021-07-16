@@ -2,7 +2,7 @@
 
     *Middle Gi*
 
-  A gi on the middle hemisphere of the keyboard.
+  A gi from the middle hemisphere of the keyboard.
 
 """
 

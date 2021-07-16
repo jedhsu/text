@@ -2,23 +2,23 @@
 
     *key . atom . base . char . pos . lwr . east*
 
-  Lower-east positional character keys.
+  Lower-east gis.
 
 """
 
-from .reki import LowerEastReki
-from .yiki import LowerEastYiki
-from .niki import LowerEastNiki
-from .saki import LowerEastSaki
-from .seki import LowerEastSeki
+from .one import LowerEast1
+from .two import LowerEast2
+from .three import LowerEast3
+from .four import LowerEast4
+from .five import LowerEast5
 
-from ._poki import LowerEastPoki
+from ._block import LowerEastBlock
 
 __all__ = [
-    "LowerEastReki",
-    "LowerEastYiki",
-    "LowerEastNiki",
-    "LowerEastSaki",
-    "LowerEastSeki",
-    "LowerEastPoki",
+    "LowerEast1",
+    "LowerEast2",
+    "LowerEast3",
+    "LowerEast4",
+    "LowerEast5",
+    "LowerEastBlock",
 ]

@@ -1,36 +1,39 @@
 """
 
-    *key . atom . base . char . pos . lwr*
+    *key . atom . base . char . pos . mid*
 
   Lower hemisphere positional character keys.
 
 """
 
-from .west import LowerWestReki
-from .west import LowerWestYiki
-from .west import LowerWestNiki
-from .west import LowerWestSaki
-from .west import LowerWestSeki
-from .west import LowerWestPoki
+from ._gi import LowerGi
 
-from .east import LowerEastReki
-from .east import LowerEastYiki
-from .east import LowerEastNiki
-from .east import LowerEastSaki
-from .east import LowerEastSeki
-from .east import LowerEastPoki
+from .west import LowerWest1
+from .west import LowerWest2
+from .west import LowerWest3
+from .west import LowerWest4
+from .west import LowerWest5
+from .west import LowerWestBlock
+
+from .east import LowerEast1
+from .east import LowerEast2
+from .east import LowerEast3
+from .east import LowerEast4
+from .east import LowerEast5
+from .east import LowerEastBlock
 
 __all__ = [
-    "LowerWestReki",
-    "LowerWestYiki",
-    "LowerWestNiki",
-    "LowerWestSaki",
-    "LowerWestSeki",
-    "LowerWestPoki",
-    "LowerEastReki",
-    "LowerEastYiki",
-    "LowerEastNiki",
-    "LowerEastSaki",
-    "LowerEastSeki",
-    "LowerEastPoki",
+    "LowerGi",
+    "LowerWest1",
+    "LowerWest2",
+    "LowerWest3",
+    "LowerWest4",
+    "LowerWest5",
+    "LowerWestBlock",
+    "LowerEast1",
+    "LowerEast2",
+    "LowerEast3",
+    "LowerEast4",
+    "LowerEast5",
+    "LowerEastBlock",
 ]

@@ -2,23 +2,23 @@
 
     *key . atom . base . char . pos . lwr . west*
 
-  Middle-west positional character keys.
+  Middle-west gis.
 
 """
 
-from .reki import MiddleWestReki
-from .yiki import MiddleWestYiki
-from .niki import MiddleWestNiki
-from .saki import MiddleWestSaki
-from .seki import MiddleWestSeki
+from .one import MiddleWest1
+from .two import MiddleWest2
+from .three import MiddleWest3
+from .four import MiddleWest4
+from .five import MiddleWest5
 
-from ._poki import MiddleWestPoki
+from ._block import MiddleWestBlock
 
 __all__ = [
-    "MiddleWestReki",
-    "MiddleWestYiki",
-    "MiddleWestNiki",
-    "MiddleWestSaki",
-    "MiddleWestSeki",
-    "MiddleWestPoki",
+    "MiddleWest1",
+    "MiddleWest2",
+    "MiddleWest3",
+    "MiddleWest4",
+    "MiddleWest5",
+    "MiddleWestBlock",
 ]
