@@ -6,6 +6,8 @@
 
 """
 
+from abc import ABCMeta
+
 from dataclasses import dataclass
 
 from .._key import BaseKey
@@ -17,4 +19,4 @@ __all__ = ["CharacterKey"]
 class CharacterKey(
     BaseKey,
 ):
-    pass
+    __metaclass__ = ABCMeta

@@ -1,6 +1,6 @@
 """
 
-    *M*   [ M ]
+    *M*   [ m ]
 
   The _m_ alphabetic key.
 

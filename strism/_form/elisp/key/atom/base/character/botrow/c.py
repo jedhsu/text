@@ -1,6 +1,6 @@
 """
 
-    *C*   [ C ]
+    *C*   [ c ]
 
   The _c_ alphabetic key.
 

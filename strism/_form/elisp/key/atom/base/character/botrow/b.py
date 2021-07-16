@@ -1,6 +1,6 @@
 """
 
-    *B*   [ B ]
+    *B*   [ b ]
 
   The _b_ alphabetic key.
 
