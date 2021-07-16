@@ -14,6 +14,12 @@ from .five import MiddleEast5
 
 from ._block import MiddleEastBlock
 
+from ._capital import MiddleEastCapital5
+from ._capital import MiddleEastCapital5
+from ._capital import MiddleEastCapital5
+from ._capital import MiddleEastCapital5
+from ._capital import MiddleEastCapital5
+
 __all__ = [
     "MiddleEast1",
     "MiddleEast2",
@@ -21,4 +27,9 @@ __all__ = [
     "MiddleEast4",
     "MiddleEast5",
     "MiddleEastBlock",
+    "MiddleEastCapital1",
+    "MiddleEastCapital2",
+    "MiddleEastCapital3",
+    "MiddleEastCapital4",
+    "MiddleEastCapital5",
 ]

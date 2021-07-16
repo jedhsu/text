@@ -2,7 +2,7 @@
 
     *key . atom . base . char . pos . lwr . east . cap*
 
-  Capital lower-east gis.
+  Lower-east capital gis.
 
 """
 
