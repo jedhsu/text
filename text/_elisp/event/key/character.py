@@ -1,0 +1,4 @@
+class CharacterKeyEvent(
+    KeyEvent,
+):
+    pass

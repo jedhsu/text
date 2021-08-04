@@ -1,0 +1,2 @@
+class Minibuffer:
+    pass

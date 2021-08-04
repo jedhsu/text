@@ -1,0 +1,2 @@
+class SyntaxTable(CharTable):
+    pass

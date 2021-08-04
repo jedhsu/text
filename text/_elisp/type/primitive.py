@@ -1,0 +1,2 @@
+class Type(Integer):
+    pass
