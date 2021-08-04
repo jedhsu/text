@@ -8,14 +8,8 @@
 
 from abc import ABCMeta
 
-
-# from .._graphical import GraphicalMeasure
-
-
 __all__ = ["Color"]
 
 
-class Color(
-    # GraphicalMeasure,
-):
+class Color:
     __metaclass__ = ABCMeta

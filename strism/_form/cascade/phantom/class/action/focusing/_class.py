@@ -8,12 +8,12 @@
 
 from abc import ABCMeta
 
-from .._class import UserActionPhantomClass
+from .._class import CascadeActionPhantom
 
 __all__ = ["FocusingAction"]
 
 
 class FocusingAction(
-    UserActionPhantomClass,
+    CascadeActionPhantom,
 ):
     __metaclass__ = ABCMeta

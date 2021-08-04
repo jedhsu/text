@@ -1,4 +1,0 @@
-class CharacterKeyEvent(
-    KeyEvent,
-):
-    pass

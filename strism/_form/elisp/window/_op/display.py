@@ -1,5 +1,0 @@
-"""
-
-Operators for displaying buffers.
-
-"""

@@ -6,13 +6,13 @@
 
 """
 
-from .._select import Select
+from .._selector import Selector
 
 __all__ = ["ElementSelector"]
 
 
 class ElementSelector(
-    Select,
+    Selector,
 ):
     def __init__(
         self,

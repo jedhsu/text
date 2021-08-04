@@ -1,4 +1,0 @@
-class WindowHeader(
-    WindowElement,
-):
-    pass

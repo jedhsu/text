@@ -6,10 +6,10 @@
 
 """
 
-from ._color import Color
+# from ._color import Color
 
-from .rgba import Rgba
-from .hsva import Hsba
+# from ._rgb import Rgba
+# from ._hsv import Hsba
 
 __all__ = [
     "Color",

@@ -1,2 +1,0 @@
-class BufferSwitch(WindowBufferOperator):
-    pass

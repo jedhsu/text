@@ -1,4 +1,0 @@
-class BufferInsert(
-    BufferOperator,
-):
-    pass

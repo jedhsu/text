@@ -1,4 +1,0 @@
-class WindowBufferOperator(
-    WindowOperator,
-):
-    pass

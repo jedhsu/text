@@ -1,2 +1,0 @@
-class WindowHeaderBar:
-    pass

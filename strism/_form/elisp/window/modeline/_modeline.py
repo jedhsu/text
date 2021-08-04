@@ -1,4 +1,0 @@
-class WindowModeLine(
-    WindowElement,
-):
-    pass
