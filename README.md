@@ -4,4 +4,4 @@
 
 Includes:
 * parts of language models for emacs lisp and css
-* type hierarchy for structured text
+* type hierarchy for structured text forms
