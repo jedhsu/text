@@ -8,8 +8,7 @@
 
 from dataclasses import dataclass
 
-
-# from wich.measure.spectral import Spectral
+from rich import Text
 
 from .red import Red
 from .green import Green
@@ -41,4 +40,13 @@ class Rgba(
             Red(red),
             Green(green),
             Blue(blue),
+        )
+
+    def display(self):
+        return Text(" ⬛").stylize(
+            "rgb({}{}{})".format(
+                self.red,
+                self.green,
+                self.blue,
+            )
         )

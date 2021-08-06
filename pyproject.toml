@@ -8,6 +8,7 @@ repository = "https://github.com/jedhsu/text"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+rich = "^10.7.0"
 
 
 [tool.poetry.dev-dependencies]

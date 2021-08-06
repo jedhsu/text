@@ -1,7 +1,0 @@
-"""
-
-    *Hue*
-
-  The hue ring.
-
-"""
