@@ -1,5 +1,0 @@
-"""
-
-Text Writing Mode
-
-"""

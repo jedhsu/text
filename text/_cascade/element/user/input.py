@@ -1,2 +1,0 @@
-class UserInputElement(Element):
-    pass

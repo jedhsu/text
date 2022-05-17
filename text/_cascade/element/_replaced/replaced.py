@@ -1,4 +1,0 @@
-class ReplacedElement(
-    Element,
-):
-    pass
